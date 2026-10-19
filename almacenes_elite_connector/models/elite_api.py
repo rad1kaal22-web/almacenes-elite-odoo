@@ -20,7 +20,7 @@ _logger = logging.getLogger(__name__)
 API_PATH = '/website/action/elite-api'
 DEFAULT_URL = 'https://almaceneselite.com'
 TIMEOUT = 40
-USER_AGENT = 'OdooAlmacenesEliteConnector/18.0.1.1.0'
+USER_AGENT = 'OdooAlmacenesEliteConnector/17.0.1.1.0'
 
 
 class AlmacenesEliteApi(models.AbstractModel):

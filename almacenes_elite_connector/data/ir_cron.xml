@@ -7,6 +7,7 @@
         <field name="code">model._cron_ea_sync()</field>
         <field name="interval_number">1</field>
         <field name="interval_type">hours</field>
+        <field name="numbercall">-1</field>
         <field name="active" eval="True"/>
     </record>
     <record id="ir_cron_almacenes_elite_signup" model="ir.cron">
@@ -16,6 +17,7 @@
         <field name="code">model._cron_ea_signup_check()</field>
         <field name="interval_number">10</field>
         <field name="interval_type">minutes</field>
+        <field name="numbercall">-1</field>
         <field name="active" eval="True"/>
     </record>
     <record id="ir_cron_almacenes_elite_nightly" model="ir.cron">
@@ -25,6 +27,7 @@
         <field name="code">model._cron_ea_nightly()</field>
         <field name="interval_number">1</field>
         <field name="interval_type">days</field>
+        <field name="numbercall">-1</field>
         <field name="nextcall" eval="(DateTime.now() + timedelta(days=1)).strftime('%Y-%m-%d 02:40:00')"/>
         <field name="active" eval="True"/>
     </record>

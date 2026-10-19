@@ -7,7 +7,7 @@ website with its products in the cart; RFQs show stock, expected dates, alternat
 avoid shipping costs. Shipments, tracking numbers and returns follow on the purchase order, and Almacenes Elite invoices are
 created as draft vendor bills with the original PDF.
 
-* Branch `18.0`: Odoo 18 (Community and Enterprise, on Odoo.sh or on-premise). Other branches: `17.0`, `19.0`.
+* Branch `17.0`: Odoo 17 (Community and Enterprise, on Odoo.sh or on-premise). Other branches: `18.0`, `19.0`.
 * New customers sign up from Odoo; existing customers link their account by tax ID, confirmed by email.
 * License: LGPL-3.
 
