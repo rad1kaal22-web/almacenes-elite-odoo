@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="purchase_order_form_almacenes_elite" model="ir.ui.view">
+        <field name="name">purchase.order.form.almacenes.elite</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_form"/>
+        <field name="arch" type="xml">
+            <xpath expr="//header" position="inside">
+                <field name="ea_is_elite" invisible="1"/>
+                <field name="ea_payment_mode" invisible="1"/>
+                <field name="ea_has_alternatives" invisible="1"/>
+                <button name="action_ea_order_on_web" type="object" string="Order on almaceneselite.com" class="btn-primary" icon="fa-shopping-cart"
+                        invisible="not ea_is_elite or ea_state not in ('not_sent', 'rejected', 'payment') or state in ('done', 'cancel')"/>
+                <button name="action_ea_return" type="object" string="Return or claim" icon="fa-undo"
+                        invisible="not ea_is_elite or not ea_order_numbers or state not in ('purchase', 'done')"/>
+            </xpath>
+            <xpath expr="//div[hasclass('oe_title')]" position="after">
+                <div class="alert alert-info mb-2" role="status" invisible="not ea_is_elite or ea_state == 'not_sent'">
+                    <strong>Almacenes Elite: </strong><field name="ea_state" readonly="1" class="oe_inline"/>
+                    <span invisible="not ea_order_numbers"> · <field name="ea_order_numbers" class="oe_inline"/></span>
+                    <div class="small" invisible="ea_state != 'payment'">
+                        Place the order on almaceneselite.com and it comes back here confirmed. Closed the tab? It is confirmed by itself in a few minutes.
+                    </div>
+                </div>
+                <div class="alert alert-light border mb-2 small" role="status"
+                     invisible="not ea_is_elite or ea_state not in ('not_sent', 'rejected') or state in ('done', 'cancel')">
+                    <div>
+                        Orders to Almacenes Elite are placed on almaceneselite.com: press «Order on almaceneselite.com» and the website
+                        opens, already signed in, with these products in the cart. When you place the order there, this RFQ is confirmed
+                        here with the Almacenes Elite order number.
+                    </div>
+                    <div class="mt-1 fw-bold" invisible="not ea_shipping_hint"><i class="fa fa-truck me-1" title="Shipping costs"/><field name="ea_shipping_hint" class="oe_inline"/></div>
+                    <div class="mt-1" invisible="not ea_availability">
+                        <span class="fw-bold"><i class="fa fa-exclamation-triangle me-1" title="Without stock"/>Without stock at Almacenes Elite:</span>
+                        <field name="ea_availability" nolabel="1"/>
+                        <button name="action_ea_use_alternatives" type="object" string="Use the alternatives with stock" class="btn btn-link p-0 align-baseline"
+                                invisible="not ea_has_alternatives"/>
+                    </div>
+                    <div class="mt-1">
+                        <button name="action_ea_refresh" type="object" string="Update prices and stock" class="btn btn-link p-0 align-baseline" icon="fa-refresh"/>
+                        <span invisible="ea_payment_mode != 'web'">
+                            <span class="text-muted"> · Your company pays by card or PayPal on the website. </span>
+                            <button name="action_ea_request_payment_change" type="object" string="Prefer another payment method? Request it"
+                                    class="btn btn-link p-0 align-baseline"/>
+                        </span>
+                    </div>
+                </div>
+                <div class="alert alert-warning mb-2" role="alert" invisible="not ea_new_address_text">
+                    This order goes to an address that is not in your contacts: <field name="ea_new_address_text" class="oe_inline fw-bold"/>.
+                    <button name="action_ea_add_address" type="object" string="Add it to my contacts" class="btn btn-link p-0 align-baseline"/>
+                </div>
+            </xpath>
+            <xpath expr="//sheet/notebook" position="inside">
+                <page string="Almacenes Elite" name="almacenes_elite" invisible="not ea_is_elite">
+                    <group>
+                        <group>
+                            <field name="ea_state"/>
+                            <field name="ea_order_numbers"/>
+                            <field name="ea_address_choice" invisible="not ea_address_choice"/>
+                        </group>
+                        <group>
+                            <field name="ea_last_sync"/>
+                            <field name="ea_message" invisible="not ea_message"/>
+                        </group>
+                    </group>
+                    <field name="ea_tracking" nolabel="1" invisible="not ea_tracking"/>
+                </page>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="purchase_order_list_almacenes_elite" model="ir.ui.view">
+        <field name="name">purchase.order.list.almacenes.elite</field>
+        <field name="model">purchase.order</field>
+        <field name="inherit_id" ref="purchase.purchase_order_kpis_tree"/>
+        <field name="arch" type="xml">
+            <xpath expr="//field[@name='partner_id']" position="after">
+                <field name="ea_state" optional="hide" string="Almacenes Elite"/>
+            </xpath>
+        </field>
+    </record>
+
+    <record id="action_almacenes_elite_orders" model="ir.actions.act_window">
+        <field name="name">Orders at Almacenes Elite</field>
+        <field name="res_model">purchase.order</field>
+        <field name="view_mode">list,form</field>
+        <field name="domain">[('ea_state', '!=', 'not_sent')]</field>
+        <field name="context">{'search_default_my_purchases': 0}</field>
+    </record>
+</odoo>

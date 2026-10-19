@@ -1,0 +1,1641 @@
+# Translation of Odoo Server.
+# This file contains the translation of the following modules:
+# 	* almacenes_elite_connector
+#
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-18 08:52+0000\n"
+"PO-Revision-Date: 2026-10-18 08:52+0000\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: \n"
+"Plural-Forms: \n"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"%(missing)s more (before VAT) and there are no shipping costs: below "
+"%(minimum)s Almacenes Elite charges %(amount)s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "%(ref)s: quantity %(old)s changed to %(new)s (%(why)s)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ": Almacenes Elite will contact you."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"<i class=\"fa fa-envelope-o me-1\"/><span>Confirm it is you: press «Sí, "
+"conectar» in the email we sent to </span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"<i class=\"fa fa-hourglass-half me-1\"/><span>Almacenes Elite is checking "
+"your request and will contact you.</span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "<i class=\"fa fa-truck me-1\" title=\"Shipping costs\"/>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid ""
+"<span class=\"fw-bold\"><i class=\"fa fa-exclamation-triangle me-1\" "
+"title=\"Without stock\"/>Without stock at Almacenes Elite:</span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span class=\"o_form_label d-block\">Shipping costs</span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span class=\"text-muted\"> · </span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid ""
+"<span class=\"text-muted\"> · Your company pays by card or PayPal on the "
+"website. </span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span class=\"text-muted\"> · vendor </span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span class=\"text-muted\">Want to see it first?</span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span class=\"text-success\"><i class=\"fa fa-check\"/> Connected as </span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "<span>No connection key yet?</span>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "<strong>Almacenes Elite: </strong>"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid ""
+"<strong>Come back with the order.</strong> When you place it, it appears here as a confirmed\n"
+"                            purchase order, with the same total."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid ""
+"<strong>Connect once.</strong> Create your account, or link the one you already have, from the\n"
+"                            Purchase settings: your company data comes from this Odoo and your prices apply at once."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid ""
+"<strong>Shop on almaceneselite.com, already signed in.</strong> Purchase › Almacenes Elite ›\n"
+"                            «Shop on almaceneselite.com»: with your prices, your approvals and your usual payment method.\n"
+"                            An RFQ of this Odoo (for instance, your replenishment) opens there with its products in the cart."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid ""
+"<strong>Tracking and invoices by themselves.</strong> Status, shipments and tracking numbers\n"
+"                            come back to the order, and the invoice arrives as a draft vendor bill with its PDF."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "Accept the conditions of Almacenes Elite to create the account."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Add it to my contacts"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Add the delivery address to your contacts"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_web_addresses__add
+msgid "Add them to my contacts"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid ""
+"Add your Almacenes Elite connection key in Purchase › Configuration › "
+"Settings."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Added to your contacts."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid "Address"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/controllers/main.py:0
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_root
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_list_almacenes_elite
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_almacenes_elite_api
+msgid "Almacenes Elite API client"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_api_url
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_api_url
+msgid "Almacenes Elite address"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Almacenes Elite cannot open this order on the website:\n"
+"%s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_consent
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_consent
+msgid "Almacenes Elite connection enabled"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_api_key
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_api_key
+msgid "Almacenes Elite connection key"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid ""
+"Almacenes Elite could not create the account:\n"
+"%s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Almacenes Elite did not send the link to the website. Try again in a moment."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_account_bank_statement_line__ea_invoice_number
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_account_move__ea_invoice_number
+msgid "Almacenes Elite invoice"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"Almacenes Elite invoices and credit notes arrive as draft vendor bills with "
+"the original PDF"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid ""
+"Almacenes Elite is checking your request: they will contact you. This Odoo "
+"connects by itself when it is done."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid "Almacenes Elite is not available right now. Try again in a moment."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_order_numbers
+msgid "Almacenes Elite order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Almacenes Elite order %s was not found for your account."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Almacenes Elite received this RFQ by email and placed it as order %s: this "
+"is the same purchase order (no duplicate)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Almacenes Elite sells whole units. Fix the quantity of:\n"
+"%s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Almacenes Elite shipped %(doc)s with %(carrier)s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_state
+msgid "Almacenes Elite status"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_partner_id
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_partner_id
+msgid "Almacenes Elite vendor"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid "Almacenes Elite: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.ir_cron_almacenes_elite_sync_ir_actions_server
+msgid "Almacenes Elite: order status, shipments and invoices"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.ir_cron_almacenes_elite_signup_ir_actions_server
+msgid ""
+"Almacenes Elite: pending connections and orders just placed on the website"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.ir_cron_almacenes_elite_nightly_ir_actions_server
+msgid "Almacenes Elite: prices, stock and replenishment reminders"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_bills_all
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_bills_all
+msgid ""
+"Also create vendor bills for purchases made on almaceneselite.com, by phone "
+"or through your sales rep."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_bills_all
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_bills_all
+msgid "Also invoices of orders placed outside Odoo"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Also invoices of purchases made outside Odoo (web, phone, sales rep)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_product_supplierinfo__ea_alternative
+msgid "Alternative with stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "Ask for it again with «Create my account or link the one I have»."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_product_supplierinfo__ea_stock_text
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_availability
+msgid "Availability at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.action_almacenes_elite_portal
+msgid "B2B portal"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_portal
+msgid "B2B portal (approvals, cost centers, reports)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/controllers/main.py:0
+msgid "Back to Purchase"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_almacenes_elite_signup
+msgid "Become an Almacenes Elite customer"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_from_web
+msgid "Bought on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Bought on almaceneselite.com: Almacenes Elite order %s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"Buy from Almacenes Elite from Odoo: on almaceneselite.com, already signed "
+"in, and back here with the order."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "Buy from Almacenes Elite from your Odoo in four steps."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_shipping_rule__margen
+msgid "Calculated in the cart"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Calculated in the website cart for each order."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Cancel"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__cancelled
+msgid "Cancelled"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_payment_mode__web
+msgid "Card or PayPal on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Carrier"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_payment_request_date
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_payment_request_date
+msgid "Change of payment method requested on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Check the amounts: Almacenes Elite total %(theirs)s, this order %(ours)s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_web_open_until
+msgid "Check the orders placed on the website often until"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/account_move.py:0
+msgid ""
+"Check this bill: Almacenes Elite invoice total is %(theirs)s and this bill "
+"adds up to %(ours)s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_product_supplierinfo__ea_checked
+msgid "Checked with Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__city
+msgid "City"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "Close"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_res_company
+msgid "Companies"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__almacenes_elite_signup__customer_type__empresa
+msgid "Company"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__company_name
+msgid "Company or school"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_res_config_settings
+msgid "Config Settings"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_signup_sent_to
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_signup_sent_to
+msgid "Confirmation email sent to"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__confirmed
+msgid "Confirmed"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Connect Almacenes Elite first (Purchase › Configuration › Settings)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Connect and check"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "Connected to Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Connection"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Connection key"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_signup_date
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_signup_date
+msgid "Connection requested on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid "Continue"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid ""
+"Could not reach Almacenes Elite. Check your internet connection and try again.\n"
+"(%s)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__country_id
+msgid "Country"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Create my account or link the one I have"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/account_move.py:0
+msgid "Created automatically from Almacenes Elite invoice %s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__create_uid
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__create_uid
+msgid "Created by"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__create_date
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__create_date
+msgid "Created on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid "Customer"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_account_name
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_account_name
+msgid "Customer account at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "Customer account: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Date"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_address_choice
+msgid "Delivered to"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Delivery"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Delivery address"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Delivery address added to your contacts: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_new_address_text
+msgid "Delivery address not in your contacts"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_purchase_order__ea_address_choice
+msgid "Delivery address of the order at Almacenes Elite."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_new_address
+msgid "Delivery address to add"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_addresses
+msgid "Delivery addresses at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Disconnect"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__display_name
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__display_name
+msgid "Display Name"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_fetch_images
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_fetch_images
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Download product images"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_bills_since
+msgid "Ea Bills Since"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_orders_since
+msgid "Ea Orders Since"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_shipments
+msgid "Ea Shipments"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_shipments_seen
+msgid "Ea Shipments Seen"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Each order is paid on almaceneselite.com when you place it."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__email
+msgid "Email"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Enable the connection"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "Enter the name and the tax ID of the company or school."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "Enter the number of employees of the company."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_refresh_prices
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_refresh_prices
+msgid ""
+"Every night, the prices, stock, expected dates and alternatives of the "
+"Almacenes Elite products you buy are updated, and the RFQs not ordered yet "
+"take the current prices."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_product_supplierinfo__ea_expected_date
+msgid "Expected at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_has_alternatives
+msgid "Has alternatives with stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_almacenes_elite_howto
+msgid "How buying from Almacenes Elite works"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.act_window,name:almacenes_elite_connector.action_almacenes_elite_howto
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_howto
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "How it works"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__accept
+msgid "I accept the conditions"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "I have confirmed it"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid ""
+"I have read and accept the conditions of service of Almacenes Elite "
+"(almaceneselite.com/condiciones-de-servicio)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_web_addresses__manual
+msgid "I will add them myself"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__id
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__id
+msgid "ID"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "If you do not choose, the website asks the first time it happens."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Import Almacenes Elite invoices"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_import_bills
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_import_bills
+msgid "Import Almacenes Elite invoices as vendor bills"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__product_supplierinfo__ea_stock_state__en_stock
+msgid "In stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__almacenes_elite_signup__customer_type__particular
+msgid "Individual"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"It had already been received: the existing order is kept (no duplicate)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_account_move
+msgid "Journal Entry"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "Key saved: finish with «Connect and check»"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__write_uid
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__write_uid
+msgid "Last Updated by"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_howto__write_date
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__write_date
+msgid "Last Updated on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_last_sync
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_last_sync
+msgid "Last synchronisation"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_last_error
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_last_error
+msgid "Last synchronisation error"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_last_sync
+msgid "Last update from Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Last update:"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_shipping_rule__sector
+msgid "Minimum order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"New customer: one step, with your company data already filled in, and your prices apply at once.\n"
+"                                Already a customer: we recognise your tax ID and send an email to confirm it is you."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "New delivery address added to your contacts: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_web_addresses
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_web_addresses
+msgid "New delivery addresses from the website"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "New delivery addresses used on the website"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "New prices on %s lines."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/product.py:0
+msgid "No longer available at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "No longer available: %s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_shipping_rule__sin
+msgid "No minimum"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "No minimum order."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "No shipping costs from"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_shipping_min
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_shipping_min
+msgid "No shipping costs from (before VAT)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "No shipping costs: this order reaches the %s minimum."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "No tracking number"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "Not confirmed yet"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__not_sent
+msgid "Not ordered yet"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_message
+msgid "Notes from Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__employees
+msgid "Number of employees"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"Odoo will exchange with Almacenes Elite only what is needed to buy from them: the orders placed on\n"
+"                            almaceneselite.com from this Odoo, their status, shipments and invoices, and the prices and stock of the\n"
+"                            products you buy from them. Nothing else is read or sent. You can disable it at any time."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__product_supplierinfo__ea_stock_state__sobre_pedido
+msgid "On order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Only the products you buy are created in Odoo, never the whole catalog"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__payment
+msgid "Open on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Opened on almaceneselite.com with these products in the cart. When the order"
+" is placed there, this RFQ is confirmed here with the Almacenes Elite order "
+"number."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Order on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_is_elite
+msgid "Ordered from Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Ordered on almaceneselite.com: Almacenes Elite order %s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Orders"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"Orders are placed on almaceneselite.com, already signed in, and come back "
+"here as purchase orders"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.act_window,name:almacenes_elite_connector.action_almacenes_elite_orders
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_orders
+msgid "Orders at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid ""
+"Orders to Almacenes Elite are placed on almaceneselite.com: press «Order on almaceneselite.com» and the website\n"
+"                        opens, already signed in, with these products in the cart. When you place the order there, this RFQ is confirmed\n"
+"                        here with the Almacenes Elite order number."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__product_supplierinfo__ea_stock_state__sin_stock
+msgid "Out of stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Payment"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_payment_mode
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_payment_mode
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_payment_mode
+msgid "Payment at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_signup_token
+msgid "Pending connection token"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__phone
+msgid "Phone"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid ""
+"Place the order on almaceneselite.com and it comes back here confirmed. "
+"Closed the tab? It is confirmed by itself in a few minutes."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Placed at Almacenes Elite: order %s."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Post bills automatically when the totals match"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_post_bills
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_post_bills
+msgid "Post bills automatically when totals match"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__zip
+msgid "Postcode"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Prefer another payment method? Request it"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Preparing"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid ""
+"Press «Sí, conectar» in the email sent to %s. This Odoo connects by itself "
+"as soon as it is confirmed."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Prices and stock checked with Almacenes Elite."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_price_rounding
+msgid "Prices rounded to 2 decimals"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Prices updated with the current Almacenes Elite prices:"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_product_product
+msgid "Product Variant"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Products"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Products without stock replaced by the alternative with stock:"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__state_id
+msgid "Province"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_purchase_order
+msgid "Purchase Order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "Purchase order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__rejected
+msgid "Rejected"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_replenish_remind
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_replenish_remind
+msgid "Remind me to order replenishment"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Remind me to order the replenishment"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_reminded
+msgid "Replenishment reminder sent"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_replenish_user_id
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_replenish_user_id
+msgid "Replenishment reminders for"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Replenishment: order it on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Request another payment method"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py:0
+msgid "Request sent to Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Requested on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Return or claim"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__almacenes_elite_signup__customer_type__colegio
+msgid "School"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "See the shop"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "See the shop without signing up"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__almacenes_elite_signup__customer_type__autonomo
+msgid "Self-employed"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_purchase_order__ea_payment_mode
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_payment_mode
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_payment_mode
+msgid ""
+"Set by Almacenes Elite for your account. With card or PayPal, each order is "
+"paid on almaceneselite.com and comes back to Odoo confirmed."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_tracking
+msgid "Shipments"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__shipped
+msgid "Shipped"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py:0
+msgid "Shipping costs (Almacenes Elite)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_purchase_order__ea_shipping_hint
+msgid "Shipping costs at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_shipping_amount
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_shipping_amount
+msgid "Shipping costs below the minimum"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_freight_product_id
+msgid "Shipping costs product"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_shipping_rule
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_shipping_rule
+msgid "Shipping costs rule"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.action_almacenes_elite_punchout
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_punchout
+msgid "Shop on almaceneselite.com"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Status"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Still to be delivered: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_product_supplierinfo__ea_stock_state
+msgid "Stock at Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__street
+msgid "Street"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model,name:almacenes_elite_connector.model_product_supplierinfo
+msgid "Supplier Pricelist"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__vat
+msgid "Tax ID"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid ""
+"The Almacenes Elite connection is disabled. Enable it in Purchase › "
+"Configuration › Settings."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid "The connection was not confirmed"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "The key will be removed from this Odoo. Continue?"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "There are no alternatives to use: check prices and stock again."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "There is nothing to order: add products to the RFQ first."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"These products have no Almacenes Elite code. Buy them once on almaceneselite.com (Purchase › Almacenes Elite › Shop on almaceneselite.com) or set their vendor product code:\n"
+"%s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py:0
+msgid "They will study it and contact you."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"This Odoo connects to your account by itself as soon as it is confirmed "
+"(requested on"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"This Odoo rounds unit prices to 2 decimals and Almacenes Elite prices have "
+"4, so orders and bills can differ by a few cents."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "This RFQ is not addressed to Almacenes Elite."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "This order goes to an address that is not in your contacts:"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "This order was already placed at Almacenes Elite (%s)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "This purchase order has no Almacenes Elite order yet."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py:0
+msgid ""
+"Tick «Enable the connection» first: no data is exchanged with Almacenes "
+"Elite until you do."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "To-do for"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_product_storable
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_product_storable
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Track inventory of new products"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Tracking"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__customer_type
+msgid "Type of customer"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid "Unexpected answer from Almacenes Elite (HTTP %s)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py:0
+msgid "Unknown error"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.server,name:almacenes_elite_connector.action_almacenes_elite_sync
+msgid "Update from Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.ui.menu,name:almacenes_elite_connector.menu_almacenes_elite_sync
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Update now"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Update prices and stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_company__ea_refresh_prices
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_res_config_settings__ea_refresh_prices
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Update prices and stock every night"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Use 4 decimals for prices"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.purchase_order_form_almacenes_elite
+msgid "Use the alternatives with stock"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "Vendor bill"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "Vendor bills"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__purchase_order__ea_state__approval
+msgid "Waiting for approval in your company"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "Waiting for approval in your company: %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "Welcome to Almacenes Elite"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_web_addresses
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_web_addresses
+msgid ""
+"When an order bought on almaceneselite.com goes to an address that is not in"
+" this Odoo: add it to your contacts automatically, or leave a button on the "
+"purchase order to add it yourself. Empty: the website asks once."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_consent
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_consent
+msgid ""
+"When enabled, Odoo exchanges with Almacenes Elite the data needed to buy "
+"from them: the orders placed on almaceneselite.com from this Odoo, their "
+"status, shipments and invoices, and the prices and stock of the products you"
+" buy from them."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"When your replenishment rules prepare an RFQ for Almacenes Elite, a to-do reminds you to order it on\n"
+"                                almaceneselite.com (nothing is ordered by itself)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_company__ea_replenish_remind
+#: model:ir.model.fields,help:almacenes_elite_connector.field_res_config_settings__ea_replenish_remind
+msgid ""
+"When your replenishment rules prepare an RFQ for Almacenes Elite, a to-do "
+"reminds you to order it on almaceneselite.com (nothing is ordered by "
+"itself)."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "You are already a customer: Almacenes Elite is checking it"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "You are already a customer: confirm it is you"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "You are already an Almacenes Elite customer"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.actions.act_window,name:almacenes_elite_connector.action_almacenes_elite_signup
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid "Your Almacenes Elite account"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid ""
+"Your RFQs show what is out of stock at Almacenes Elite, when it is expected "
+"and an alternative with stock."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py:0
+msgid "Your account is ready: you can buy from Purchase › Almacenes Elite."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_signup_view_form
+msgid ""
+"Your company data is already filled in from this Odoo: check it, tell us what type of customer you are and accept the\n"
+"                    conditions. New customers: your prices apply from the first moment and you pay by card or PayPal.\n"
+"                    Already a customer? We recognise your tax ID and connect this Odoo to your account, with the same prices and payment\n"
+"                    terms, once you confirm it by email."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields,field_description:almacenes_elite_connector.field_almacenes_elite_signup__contact_name
+msgid "Your name"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid ""
+"Your replenishment rules have prepared this RFQ for Almacenes Elite. Press "
+"«Order on almaceneselite.com»: the website opens with these products in the "
+"cart and the order is placed there."
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model:ir.model.fields.selection,name:almacenes_elite_connector.selection__res_company__ea_payment_mode__account
+msgid "Your usual payment terms"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.almacenes_elite_howto_view_form
+msgid "almaceneselite.com from Odoo"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "alternative with stock: [%(ref)s] %(name)s (%(price)s)"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "ea_…"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "expected %s"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "no stock right now"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py:0
+msgid "on order"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "€ (before VAT); below that,"
+msgstr ""
+
+#. module: almacenes_elite_connector
+#: model_terms:ir.ui.view,arch_db:almacenes_elite_connector.res_config_settings_view_form_almacenes_elite
+msgid "€. Your RFQs show how much is missing."
+msgstr ""

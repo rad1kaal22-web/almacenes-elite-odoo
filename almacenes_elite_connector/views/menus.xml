@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="action_almacenes_elite_sync" model="ir.actions.server">
+        <field name="name">Update from Almacenes Elite</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="state">code</field>
+        <field name="code">model._ea_sync_company(env.company)</field>
+    </record>
+
+    <record id="action_almacenes_elite_punchout" model="ir.actions.server">
+        <field name="name">Shop on almaceneselite.com</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_ea_punchout()</field>
+    </record>
+
+    <record id="action_almacenes_elite_portal" model="ir.actions.server">
+        <field name="name">B2B portal</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="state">code</field>
+        <field name="code">action = model.action_ea_portal()</field>
+    </record>
+
+    <menuitem id="menu_almacenes_elite_root" name="Almacenes Elite" parent="purchase.menu_purchase_root" sequence="15"/>
+    <menuitem id="menu_almacenes_elite_punchout" name="Shop on almaceneselite.com" parent="menu_almacenes_elite_root"
+              action="action_almacenes_elite_punchout" sequence="5"/>
+    <menuitem id="menu_almacenes_elite_portal" name="B2B portal (approvals, cost centers, reports)" parent="menu_almacenes_elite_root"
+              action="action_almacenes_elite_portal" sequence="7"/>
+    <menuitem id="menu_almacenes_elite_orders" name="Orders at Almacenes Elite" parent="menu_almacenes_elite_root"
+              action="action_almacenes_elite_orders" sequence="20"/>
+    <menuitem id="menu_almacenes_elite_howto" name="How it works" parent="menu_almacenes_elite_root"
+              action="action_almacenes_elite_howto" sequence="25"/>
+    <menuitem id="menu_almacenes_elite_sync" name="Update now" parent="menu_almacenes_elite_root"
+              action="action_almacenes_elite_sync" sequence="30" groups="purchase.group_purchase_manager"/>
+</odoo>

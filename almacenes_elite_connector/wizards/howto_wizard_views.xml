@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="almacenes_elite_howto_view_form" model="ir.ui.view">
+        <field name="name">almacenes.elite.howto.form</field>
+        <field name="model">almacenes.elite.howto</field>
+        <field name="arch" type="xml">
+            <form string="How it works">
+                <div class="o_ea_howto">
+                    <p class="lead">Buy from Almacenes Elite from your Odoo in four steps.</p>
+                    <ol>
+                        <li class="mb-2"><strong>Connect once.</strong> Create your account, or link the one you already have, from the
+                            Purchase settings: your company data comes from this Odoo and your prices apply at once.</li>
+                        <li class="mb-2"><strong>Shop on almaceneselite.com, already signed in.</strong> Purchase › Almacenes Elite ›
+                            «Shop on almaceneselite.com»: with your prices, your approvals and your usual payment method.
+                            An RFQ of this Odoo (for instance, your replenishment) opens there with its products in the cart.</li>
+                        <li class="mb-2"><strong>Come back with the order.</strong> When you place it, it appears here as a confirmed
+                            purchase order, with the same total.</li>
+                        <li class="mb-2"><strong>Tracking and invoices by themselves.</strong> Status, shipments and tracking numbers
+                            come back to the order, and the invoice arrives as a draft vendor bill with its PDF.</li>
+                    </ol>
+                    <div class="row g-2 mt-2">
+                        <div class="col-md-4"><img src="/almacenes_elite_connector/static/src/img/ea_howto_web.jpg" class="img-fluid border rounded" alt="almaceneselite.com from Odoo"/></div>
+                        <div class="col-md-4"><img src="/almacenes_elite_connector/static/src/img/ea_howto_order.jpg" class="img-fluid border rounded" alt="Purchase order"/></div>
+                        <div class="col-md-4"><img src="/almacenes_elite_connector/static/src/img/ea_howto_bill.jpg" class="img-fluid border rounded" alt="Vendor bill"/></div>
+                    </div>
+                </div>
+                <footer>
+                    <button name="action_signup" type="object" string="Create my account or link the one I have" class="btn-primary"/>
+                    <button name="action_open_shop" type="object" string="See the shop"/>
+                    <button string="Close" class="btn-secondary" special="cancel"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_almacenes_elite_howto" model="ir.actions.act_window">
+        <field name="name">How it works</field>
+        <field name="res_model">almacenes.elite.howto</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

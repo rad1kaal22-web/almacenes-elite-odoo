@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="res_config_settings_view_form_almacenes_elite" model="ir.ui.view">
+        <field name="name">res.config.settings.view.form.almacenes.elite</field>
+        <field name="model">res.config.settings</field>
+        <field name="inherit_id" ref="purchase.res_config_settings_view_form_purchase"/>
+        <field name="arch" type="xml">
+            <xpath expr="//app[@name='purchase']" position="inside">
+                <block title="Almacenes Elite" name="almacenes_elite_settings" groups="base.group_system">
+                    <setting id="ea_connection" company_dependent="1" string="Connection"
+                             help="Buy from Almacenes Elite from Odoo: on almaceneselite.com, already signed in, and back here with the order.">
+                        <div class="d-flex gap-2 align-items-start mt-2">
+                            <field name="ea_consent" nolabel="1"/>
+                            <label for="ea_consent" class="o_light_label" string="Enable the connection"/>
+                        </div>
+                        <div class="text-muted small">
+                            Odoo will exchange with Almacenes Elite only what is needed to buy from them: the orders placed on
+                            almaceneselite.com from this Odoo, their status, shipments and invoices, and the prices and stock of the
+                            products you buy from them. Nothing else is read or sent. You can disable it at any time.
+                        </div>
+                        <div class="mt-2 p-2 border rounded bg-light" invisible="ea_account_name or ea_signup_date">
+                            <span>No connection key yet?</span>
+                            <button name="%(almacenes_elite_connector.action_almacenes_elite_signup)d" type="action" string="Create my account or link the one I have"
+                                    class="btn-link p-0 ms-1 align-baseline" icon="fa-user-plus"/>
+                            <div class="text-muted small">
+                                New customer: one step, with your company data already filled in, and your prices apply at once.
+                                Already a customer: we recognise your tax ID and send an email to confirm it is you.
+                            </div>
+                            <div class="small mt-1">
+                                <span class="text-muted">Want to see it first?</span>
+                                <button name="action_ea_open_shop" type="object" string="See the shop without signing up" class="btn-link p-0 ms-1 align-baseline" icon="fa-shopping-cart"/>
+                                <span class="text-muted"> · </span>
+                                <button name="action_ea_howto" type="object" string="How it works" class="btn-link p-0 align-baseline" icon="fa-info-circle"/>
+                            </div>
+                            <div class="text-danger small mt-1" invisible="not ea_last_error"><field name="ea_last_error" class="oe_inline"/></div>
+                        </div>
+                        <div class="mt-2 p-2 border rounded alert alert-info mb-0" role="status" invisible="ea_account_name or not ea_signup_date">
+                            <div invisible="not ea_signup_sent_to">
+                                <i class="fa fa-envelope-o me-1"/><span>Confirm it is you: press «Sí, conectar» in the email we sent to </span>
+                                <field name="ea_signup_sent_to" class="oe_inline fw-bold"/>
+                            </div>
+                            <div invisible="ea_signup_sent_to">
+                                <i class="fa fa-hourglass-half me-1"/><span>Almacenes Elite is checking your request and will contact you.</span>
+                            </div>
+                            <div class="text-muted small">
+                                This Odoo connects to your account by itself as soon as it is confirmed (requested on <field name="ea_signup_date" class="oe_inline"/>).
+                            </div>
+                            <button name="action_ea_check_signup" type="object" string="I have confirmed it" class="btn-link p-0" icon="fa-refresh"/>
+                            <button name="action_ea_cancel_signup" type="object" string="Cancel" class="btn-link p-0 ms-3"/>
+                        </div>
+                        <div class="mt-2" invisible="not ea_consent">
+                            <label for="ea_api_key" string="Connection key"/>
+                            <field name="ea_api_key" password="True" placeholder="ea_…"/>
+                        </div>
+                        <div class="mt-2" invisible="not ea_consent">
+                            <button name="action_ea_connect" type="object" string="Connect and check" class="btn-primary" icon="fa-plug"/>
+                            <button name="action_ea_disconnect" type="object" string="Disconnect" class="btn-link" invisible="not ea_partner_id"
+                                    confirm="The key will be removed from this Odoo. Continue?"/>
+                        </div>
+                        <div class="mt-2" invisible="not ea_account_name">
+                            <span class="text-success"><i class="fa fa-check"/> Connected as </span><field name="ea_account_name" class="oe_inline fw-bold"/>
+                            <span class="text-muted"> · vendor </span><field name="ea_partner_id" class="oe_inline"/>
+                        </div>
+                        <div class="mt-1 text-muted small" invisible="not ea_account_name">
+                            Last update: <field name="ea_last_sync" class="oe_inline"/>
+                            <span invisible="not ea_last_error" class="text-danger"> · <field name="ea_last_error" class="oe_inline"/></span>
+                            <button name="action_ea_sync_now" type="object" string="Update now" class="btn-link p-0 ms-2"/>
+                        </div>
+                        <div class="mt-2" invisible="1">
+                            <field name="ea_api_url"/>
+                        </div>
+                    </setting>
+                    <setting id="ea_orders" company_dependent="1" string="Orders" invisible="not ea_account_name"
+                             help="Orders are placed on almaceneselite.com, already signed in, and come back here as purchase orders">
+                        <div class="mt-2">
+                            <label for="ea_web_addresses" string="New delivery addresses used on the website"/>
+                            <field name="ea_web_addresses" widget="radio"/>
+                            <div class="text-muted small">If you do not choose, the website asks the first time it happens.</div>
+                        </div>
+                        <div class="mt-3">
+                            <label for="ea_payment_mode" string="Payment" class="d-block"/>
+                            <field name="ea_payment_mode" class="oe_inline fw-bold"/>
+                            <div class="text-muted small" invisible="ea_payment_mode != 'web'">
+                                Each order is paid on almaceneselite.com when you place it.
+                            </div>
+                            <div class="mt-1" invisible="ea_payment_mode != 'web'">
+                                <button name="action_ea_request_payment_change" type="object" string="Request another payment method"
+                                        class="btn-link p-0" icon="fa-handshake-o"/>
+                                <span class="text-muted small ms-2" invisible="not ea_payment_request_date">
+                                    Requested on <field name="ea_payment_request_date" class="oe_inline"/>: Almacenes Elite will contact you.
+                                </span>
+                            </div>
+                        </div>
+                        <field name="ea_shipping_rule" invisible="1"/>
+                        <div class="mt-3" invisible="not ea_shipping_rule">
+                            <span class="o_form_label d-block">Shipping costs</span>
+                            <div class="small" invisible="ea_shipping_rule != 'sector'">
+                                No shipping costs from <field name="ea_shipping_min" class="oe_inline fw-bold"/> € (before VAT); below that,
+                                <field name="ea_shipping_amount" class="oe_inline"/> €. Your RFQs show how much is missing.
+                            </div>
+                            <div class="small" invisible="ea_shipping_rule != 'margen'">Calculated in the website cart for each order.</div>
+                            <div class="small" invisible="ea_shipping_rule != 'sin'">No minimum order.</div>
+                        </div>
+                        <div class="mt-3">
+                            <div class="d-flex gap-2 align-items-start">
+                                <field name="ea_replenish_remind" nolabel="1"/>
+                                <label for="ea_replenish_remind" class="o_light_label" string="Remind me to order the replenishment"/>
+                            </div>
+                            <div class="text-muted small">
+                                When your replenishment rules prepare an RFQ for Almacenes Elite, a to-do reminds you to order it on
+                                almaceneselite.com (nothing is ordered by itself).
+                            </div>
+                            <div class="mt-1" invisible="not ea_replenish_remind">
+                                <label for="ea_replenish_user_id" string="To-do for"/>
+                                <field name="ea_replenish_user_id" class="oe_inline" options="{'no_create': True}"/>
+                            </div>
+                        </div>
+                    </setting>
+                    <setting id="ea_products" company_dependent="1" string="Products" invisible="not ea_account_name"
+                             help="Only the products you buy are created in Odoo, never the whole catalog">
+                        <div class="d-flex gap-2 align-items-start mt-2">
+                            <field name="ea_refresh_prices" nolabel="1"/>
+                            <label for="ea_refresh_prices" class="o_light_label" string="Update prices and stock every night"/>
+                        </div>
+                        <div class="text-muted small">
+                            Your RFQs show what is out of stock at Almacenes Elite, when it is expected and an alternative with stock.
+                        </div>
+                        <div class="d-flex gap-2 align-items-start mt-2">
+                            <field name="ea_product_storable" nolabel="1"/>
+                            <label for="ea_product_storable" class="o_light_label" string="Track inventory of new products"/>
+                        </div>
+                        <div class="d-flex gap-2 align-items-start mt-1">
+                            <field name="ea_fetch_images" nolabel="1"/>
+                            <label for="ea_fetch_images" class="o_light_label" string="Download product images"/>
+                        </div>
+                    </setting>
+                    <setting id="ea_bills" company_dependent="1" string="Vendor bills" invisible="not ea_account_name"
+                             help="Almacenes Elite invoices and credit notes arrive as draft vendor bills with the original PDF">
+                        <field name="ea_price_rounding" invisible="1"/>
+                        <div class="alert alert-warning small mt-2 mb-1" role="alert" invisible="not ea_price_rounding">
+                            This Odoo rounds unit prices to 2 decimals and Almacenes Elite prices have 4, so orders and bills can differ by a few cents.
+                            <button name="action_ea_price_digits" type="object" string="Use 4 decimals for prices" class="btn btn-link p-0 align-baseline"/>
+                        </div>
+                        <div class="d-flex gap-2 align-items-start mt-2">
+                            <field name="ea_import_bills" nolabel="1"/>
+                            <label for="ea_import_bills" class="o_light_label" string="Import Almacenes Elite invoices"/>
+                        </div>
+                        <div class="d-flex gap-2 align-items-start mt-1" invisible="not ea_import_bills">
+                            <field name="ea_bills_all" nolabel="1"/>
+                            <label for="ea_bills_all" class="o_light_label" string="Also invoices of purchases made outside Odoo (web, phone, sales rep)"/>
+                        </div>
+                        <div class="d-flex gap-2 align-items-start mt-1" invisible="not ea_import_bills">
+                            <field name="ea_post_bills" nolabel="1"/>
+                            <label for="ea_post_bills" class="o_light_label" string="Post bills automatically when the totals match"/>
+                        </div>
+                    </setting>
+                </block>
+            </xpath>
+        </field>
+    </record>
+</odoo>

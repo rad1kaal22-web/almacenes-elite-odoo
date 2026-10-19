@@ -1,0 +1,1371 @@
+# Spanish translation of almacenes_elite_connector
+msgid ""
+msgstr ""
+"Project-Id-Version: Odoo Server 18.0\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2026-10-18 08:52+0000\n"
+"PO-Revision-Date: 2026-10-18 08:52+0000\n"
+"Last-Translator: \n"
+"Language: es\n"
+"Language-Team: \n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=utf-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Generated-By: Babel 2.18.0\n"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "%(missing)s more (before VAT) and there are no shipping costs: below %(minimum)s Almacenes Elite charges %(amount)s."
+msgstr "Te faltan %(missing)s (sin IVA) para no pagar portes: por debajo de %(minimum)s, Almacenes Élite cobra %(amount)s."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "%(ref)s: quantity %(old)s changed to %(new)s (%(why)s)"
+msgstr "%(ref)s: la cantidad %(old)s pasa a %(new)s (%(why)s)"
+
+#. module: almacenes_elite_connector
+msgid ": Almacenes Elite will contact you."
+msgstr ": Almacenes Élite se pondrá en contacto contigo."
+
+#. module: almacenes_elite_connector
+msgid "<i class=\"fa fa-envelope-o me-1\"/><span>Confirm it is you: press «Sí, conectar» in the email we sent to </span>"
+msgstr "<i class=\"fa fa-envelope-o me-1\"/><span>Confirma que eres tú: pulsa «Sí, conectar» en el correo que hemos enviado a </span>"
+
+#. module: almacenes_elite_connector
+msgid "<i class=\"fa fa-hourglass-half me-1\"/><span>Almacenes Elite is checking your request and will contact you.</span>"
+msgstr "<i class=\"fa fa-hourglass-half me-1\"/><span>Almacenes Élite está revisando tu solicitud y se pondrá en contacto contigo.</span>"
+
+#. module: almacenes_elite_connector
+msgid "<i class=\"fa fa-truck me-1\" title=\"Shipping costs\"/>"
+msgstr "<i class=\"fa fa-truck me-1\" title=\"Portes\"/>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"fw-bold\"><i class=\"fa fa-exclamation-triangle me-1\" title=\"Without stock\"/>Without stock at Almacenes Elite:</span>"
+msgstr "<span class=\"fw-bold\"><i class=\"fa fa-exclamation-triangle me-1\" title=\"Sin stock\"/>Sin stock en Almacenes Élite:</span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"o_form_label d-block\">Shipping costs</span>"
+msgstr "<span class=\"o_form_label d-block\">Portes</span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"text-muted\"> · </span>"
+msgstr "<span class=\"text-muted\"> · </span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"text-muted\"> · Your company pays by card or PayPal on the website. </span>"
+msgstr "<span class=\"text-muted\"> · Tu empresa paga con tarjeta o PayPal en la web. </span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"text-muted\"> · vendor </span>"
+msgstr "<span class=\"text-muted\"> · proveedor </span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"text-muted\">Want to see it first?</span>"
+msgstr "<span class=\"text-muted\">¿Quieres verlo antes?</span>"
+
+#. module: almacenes_elite_connector
+msgid "<span class=\"text-success\"><i class=\"fa fa-check\"/> Connected as </span>"
+msgstr "<span class=\"text-success\"><i class=\"fa fa-check\"/> Conectado como </span>"
+
+#. module: almacenes_elite_connector
+msgid "<span>No connection key yet?</span>"
+msgstr "<span>¿Aún no tienes clave de conexión?</span>"
+
+#. module: almacenes_elite_connector
+msgid "<strong>Almacenes Elite: </strong>"
+msgstr "<strong>Almacenes Élite: </strong>"
+
+#. module: almacenes_elite_connector
+msgid ""
+"<strong>Come back with the order.</strong> When you place it, it appears here as a confirmed\n"
+"                            purchase order, with the same total."
+msgstr "<strong>Vuelves con el pedido.</strong> Al hacerlo, aparece aquí como pedido de compra confirmado, con el mismo total."
+
+#. module: almacenes_elite_connector
+msgid ""
+"<strong>Connect once.</strong> Create your account, or link the one you already have, from the\n"
+"                            Purchase settings: your company data comes from this Odoo and your prices apply at once."
+msgstr "<strong>Te conectas una vez.</strong> Crea tu cuenta, o enlaza la que ya tienes, desde los ajustes de Compra: los datos de tu empresa salen de este Odoo y tus precios se aplican al momento."
+
+#. module: almacenes_elite_connector
+msgid ""
+"<strong>Shop on almaceneselite.com, already signed in.</strong> Purchase › Almacenes Elite ›\n"
+"                            «Shop on almaceneselite.com»: with your prices, your approvals and your usual payment method.\n"
+"                            An RFQ of this Odoo (for instance, your replenishment) opens there with its products in the cart."
+msgstr "<strong>Compras en almaceneselite.com, ya identificado.</strong> Compra › Almacenes Élite › «Comprar en almaceneselite.com»: con tus precios, tus aprobaciones y tu forma de pago de siempre. Una solicitud de este Odoo (por ejemplo, tu reposición) se abre allí con sus productos en la cesta."
+
+#. module: almacenes_elite_connector
+msgid ""
+"<strong>Tracking and invoices by themselves.</strong> Status, shipments and tracking numbers\n"
+"                            come back to the order, and the invoice arrives as a draft vendor bill with its PDF."
+msgstr "<strong>Seguimiento y facturas, solos.</strong> El estado, los envíos y los números de seguimiento vuelven al pedido, y la factura llega como factura de proveedor en borrador con su PDF."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "Accept the conditions of Almacenes Elite to create the account."
+msgstr "Acepta las condiciones de Almacenes Élite para crear la cuenta."
+
+#. module: almacenes_elite_connector
+msgid "Add it to my contacts"
+msgstr "Añadirla a mis contactos"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Add the delivery address to your contacts"
+msgstr "Añade la dirección de entrega a tus contactos"
+
+#. module: almacenes_elite_connector
+msgid "Add them to my contacts"
+msgstr "Añadirlas a mis contactos"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+msgid "Add your Almacenes Elite connection key in Purchase › Configuration › Settings."
+msgstr "Añade tu clave de conexión de Almacenes Élite en Compra › Configuración › Ajustes."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Added to your contacts."
+msgstr "Añadida a tus contactos."
+
+#. module: almacenes_elite_connector
+msgid "Address"
+msgstr "Dirección"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/controllers/main.py
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Almacenes Elite"
+msgstr "Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite API client"
+msgstr "Cliente de la API de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite address"
+msgstr "Dirección de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid ""
+"Almacenes Elite cannot open this order on the website:\n"
+"%s"
+msgstr ""
+"Almacenes Élite no puede abrir este pedido en la web:\n"
+"%s"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite connection enabled"
+msgstr "Conexión con Almacenes Élite activada"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite connection key"
+msgstr "Clave de conexión de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+#, python-format
+msgid ""
+"Almacenes Elite could not create the account:\n"
+"%s"
+msgstr ""
+"Almacenes Élite no ha podido crear la cuenta:\n"
+"%s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Almacenes Elite did not send the link to the website. Try again in a moment."
+msgstr "Almacenes Élite no ha enviado el enlace a la web. Vuelve a intentarlo en un momento."
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite invoice"
+msgstr "Factura de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite invoices and credit notes arrive as draft vendor bills with the original PDF"
+msgstr "Las facturas y abonos de Almacenes Élite llegan como facturas de proveedor en borrador, con el PDF original"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Almacenes Elite is checking your request: they will contact you. This Odoo connects by itself when it is done."
+msgstr "Almacenes Élite está revisando tu solicitud y se pondrá en contacto contigo. Este Odoo se conecta solo cuando esté."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+msgid "Almacenes Elite is not available right now. Try again in a moment."
+msgstr "Almacenes Élite no está disponible ahora mismo. Inténtalo de nuevo en un momento."
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite order"
+msgstr "Pedido en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Almacenes Elite order %s was not found for your account."
+msgstr "No se encuentra el pedido %s de Almacenes Élite en tu cuenta."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Almacenes Elite received this RFQ by email and placed it as order %s: this is the same purchase order (no duplicate)."
+msgstr "Almacenes Élite recibió esta solicitud por correo y la ha pasado a pedido %s: es este mismo pedido de compra (no se duplica)."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid ""
+"Almacenes Elite sells whole units. Fix the quantity of:\n"
+"%s"
+msgstr ""
+"Almacenes Élite vende unidades enteras. Corrige la cantidad de:\n"
+"%s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Almacenes Elite shipped %(doc)s with %(carrier)s."
+msgstr "Almacenes Élite ha enviado %(doc)s con %(carrier)s."
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite status"
+msgstr "Estado en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite vendor"
+msgstr "Proveedor Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+#, python-format
+msgid "Almacenes Elite: %s"
+msgstr "Almacenes Élite: %s"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite: order status, shipments and invoices"
+msgstr "Almacenes Élite: estado de pedidos, envíos y facturas"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite: pending connections and orders just placed on the website"
+msgstr "Almacenes Élite: conexiones pendientes y pedidos recién hechos en la web"
+
+#. module: almacenes_elite_connector
+msgid "Almacenes Elite: prices, stock and replenishment reminders"
+msgstr "Almacenes Élite: precios, stock y avisos de reposición"
+
+#. module: almacenes_elite_connector
+msgid "Also create vendor bills for purchases made on almaceneselite.com, by phone or through your sales rep."
+msgstr "Crear también facturas de proveedor de las compras hechas en almaceneselite.com, por teléfono o con tu comercial."
+
+#. module: almacenes_elite_connector
+msgid "Also invoices of orders placed outside Odoo"
+msgstr "También las facturas de pedidos hechos fuera de Odoo"
+
+#. module: almacenes_elite_connector
+msgid "Also invoices of purchases made outside Odoo (web, phone, sales rep)"
+msgstr "También las facturas de compras hechas fuera de Odoo (web, teléfono, comercial)"
+
+#. module: almacenes_elite_connector
+msgid "Alternative with stock"
+msgstr "Alternativa con stock"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Ask for it again with «Create my account or link the one I have»."
+msgstr "Vuelve a pedirlo con «Crear mi cuenta o vincular la que tengo»."
+
+#. module: almacenes_elite_connector
+msgid "Availability at Almacenes Elite"
+msgstr "Disponibilidad en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "B2B portal"
+msgstr "Portal B2B"
+
+#. module: almacenes_elite_connector
+msgid "B2B portal (approvals, cost centers, reports)"
+msgstr "Portal B2B (aprobaciones, centros de coste, informes)"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/controllers/main.py
+msgid "Back to Purchase"
+msgstr "Volver a Compras"
+
+#. module: almacenes_elite_connector
+msgid "Become an Almacenes Elite customer"
+msgstr "Hazte cliente de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Bought on almaceneselite.com"
+msgstr "Comprado en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Bought on almaceneselite.com: Almacenes Elite order %s."
+msgstr "Comprado en almaceneselite.com: pedido %s de Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Buy from Almacenes Elite from Odoo: on almaceneselite.com, already signed in, and back here with the order."
+msgstr "Compra a Almacenes Élite desde Odoo: en almaceneselite.com, ya identificado, y de vuelta aquí con el pedido."
+
+#. module: almacenes_elite_connector
+msgid "Buy from Almacenes Elite from your Odoo in four steps."
+msgstr "Compra a Almacenes Élite desde tu Odoo en cuatro pasos."
+
+#. module: almacenes_elite_connector
+msgid "Calculated in the cart"
+msgstr "Se calcula en la cesta"
+
+#. module: almacenes_elite_connector
+msgid "Calculated in the website cart for each order."
+msgstr "Se calculan en la cesta de la web en cada pedido."
+
+#. module: almacenes_elite_connector
+msgid "Cancel"
+msgstr "Cancelar"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Cancelled"
+msgstr "Cancelado"
+
+#. module: almacenes_elite_connector
+msgid "Card or PayPal on almaceneselite.com"
+msgstr "Tarjeta o PayPal en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Carrier"
+msgstr "Transportista"
+
+#. module: almacenes_elite_connector
+msgid "Change of payment method requested on"
+msgstr "Cambio de forma de pago solicitado el"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Check the amounts: Almacenes Elite total %(theirs)s, this order %(ours)s."
+msgstr "Revisa los importes: total de Almacenes Élite %(theirs)s, este pedido %(ours)s."
+
+#. module: almacenes_elite_connector
+msgid "Check the orders placed on the website often until"
+msgstr "Comprobar a menudo los pedidos hechos en la web hasta"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/account_move.py
+#, python-format
+msgid "Check this bill: Almacenes Elite invoice total is %(theirs)s and this bill adds up to %(ours)s."
+msgstr "Revisa esta factura: la factura de Almacenes Élite suma %(theirs)s y esta factura de proveedor %(ours)s."
+
+#. module: almacenes_elite_connector
+msgid "Checked with Almacenes Elite"
+msgstr "Comprobado con Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "City"
+msgstr "Población"
+
+#. module: almacenes_elite_connector
+msgid "Close"
+msgstr "Cerrar"
+
+#. module: almacenes_elite_connector
+msgid "Companies"
+msgstr "Compañías"
+
+#. module: almacenes_elite_connector
+msgid "Company"
+msgstr "Empresa"
+
+#. module: almacenes_elite_connector
+msgid "Company or school"
+msgstr "Empresa o centro escolar"
+
+#. module: almacenes_elite_connector
+msgid "Config Settings"
+msgstr "Ajustes de configuración"
+
+#. module: almacenes_elite_connector
+msgid "Confirmation email sent to"
+msgstr "Correo de confirmación enviado a"
+
+#. module: almacenes_elite_connector
+msgid "Confirmed"
+msgstr "Confirmado"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Connect Almacenes Elite first (Purchase › Configuration › Settings)."
+msgstr "Conecta primero Almacenes Élite (Compra › Configuración › Ajustes)."
+
+#. module: almacenes_elite_connector
+msgid "Connect and check"
+msgstr "Conectar y comprobar"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Connected to Almacenes Elite"
+msgstr "Conectado con Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Connection"
+msgstr "Conexión"
+
+#. module: almacenes_elite_connector
+msgid "Connection key"
+msgstr "Clave de conexión"
+
+#. module: almacenes_elite_connector
+msgid "Connection requested on"
+msgstr "Conexión pedida el"
+
+#. module: almacenes_elite_connector
+msgid "Continue"
+msgstr "Continuar"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+#, python-format
+msgid ""
+"Could not reach Almacenes Elite. Check your internet connection and try again.\n"
+"(%s)"
+msgstr ""
+"No se ha podido contactar con Almacenes Élite. Revisa la conexión a internet y vuelve a intentarlo.\n"
+"(%s)"
+
+#. module: almacenes_elite_connector
+msgid "Country"
+msgstr "País"
+
+#. module: almacenes_elite_connector
+msgid "Create my account or link the one I have"
+msgstr "Crear mi cuenta o vincular la que tengo"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/account_move.py
+#, python-format
+msgid "Created automatically from Almacenes Elite invoice %s."
+msgstr "Creada automáticamente a partir de la factura %s de Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Created by"
+msgstr "Creado por"
+
+#. module: almacenes_elite_connector
+msgid "Created on"
+msgstr "Creado el"
+
+#. module: almacenes_elite_connector
+msgid "Customer"
+msgstr "Cliente"
+
+#. module: almacenes_elite_connector
+msgid "Customer account at Almacenes Elite"
+msgstr "Cuenta de cliente en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+#, python-format
+msgid "Customer account: %s"
+msgstr "Cuenta de cliente: %s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Date"
+msgstr "Fecha"
+
+#. module: almacenes_elite_connector
+msgid "Delivered to"
+msgstr "Entregado en"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Delivery"
+msgstr "Albarán"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Delivery address"
+msgstr "Dirección de entrega"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Delivery address added to your contacts: %s"
+msgstr "Dirección de entrega añadida a tus contactos: %s"
+
+#. module: almacenes_elite_connector
+msgid "Delivery address not in your contacts"
+msgstr "Dirección de entrega que no está en tus contactos"
+
+#. module: almacenes_elite_connector
+msgid "Delivery address of the order at Almacenes Elite."
+msgstr "Dirección de entrega del pedido en Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Delivery address to add"
+msgstr "Dirección de entrega por añadir"
+
+#. module: almacenes_elite_connector
+msgid "Delivery addresses at Almacenes Elite"
+msgstr "Direcciones de entrega en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Disconnect"
+msgstr "Desconectar"
+
+#. module: almacenes_elite_connector
+msgid "Display Name"
+msgstr "Nombre mostrado"
+
+#. module: almacenes_elite_connector
+msgid "Download product images"
+msgstr "Descargar las imágenes de los productos"
+
+#. module: almacenes_elite_connector
+msgid "Ea Bills Since"
+msgstr "Facturas desde"
+
+#. module: almacenes_elite_connector
+msgid "Ea Orders Since"
+msgstr "Pedidos desde"
+
+#. module: almacenes_elite_connector
+msgid "Ea Shipments"
+msgstr "Envíos (datos)"
+
+#. module: almacenes_elite_connector
+msgid "Ea Shipments Seen"
+msgstr "Envíos ya avisados"
+
+#. module: almacenes_elite_connector
+msgid "Each order is paid on almaceneselite.com when you place it."
+msgstr "Cada pedido se paga en almaceneselite.com al hacerlo."
+
+#. module: almacenes_elite_connector
+msgid "Email"
+msgstr "Correo electrónico"
+
+#. module: almacenes_elite_connector
+msgid "Enable the connection"
+msgstr "Activar la conexión"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "Enter the name and the tax ID of the company or school."
+msgstr "Escribe el nombre y el NIF de la empresa o del centro."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "Enter the number of employees of the company."
+msgstr "Indica el número de empleados de la empresa."
+
+#. module: almacenes_elite_connector
+msgid "Every night, the prices, stock, expected dates and alternatives of the Almacenes Elite products you buy are updated, and the RFQs not ordered yet take the current prices."
+msgstr "Cada noche se actualizan los precios, el stock, las fechas previstas y las alternativas de los productos de Almacenes Élite que compras, y las solicitudes que aún no se han pedido toman los precios actuales."
+
+#. module: almacenes_elite_connector
+msgid "Expected at Almacenes Elite"
+msgstr "Prevista en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Has alternatives with stock"
+msgstr "Tiene alternativas con stock"
+
+#. module: almacenes_elite_connector
+msgid "How buying from Almacenes Elite works"
+msgstr "Cómo se compra a Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "How it works"
+msgstr "Cómo funciona"
+
+#. module: almacenes_elite_connector
+msgid "I accept the conditions"
+msgstr "Acepto las condiciones"
+
+#. module: almacenes_elite_connector
+msgid "I have confirmed it"
+msgstr "Ya lo he confirmado"
+
+#. module: almacenes_elite_connector
+msgid "I have read and accept the conditions of service of Almacenes Elite (almaceneselite.com/condiciones-de-servicio)"
+msgstr "He leído y acepto las condiciones de servicio de Almacenes Élite (almaceneselite.com/condiciones-de-servicio)"
+
+#. module: almacenes_elite_connector
+msgid "I will add them myself"
+msgstr "Las añadiré yo"
+
+#. module: almacenes_elite_connector
+msgid "ID"
+msgstr "ID"
+
+#. module: almacenes_elite_connector
+msgid "If you do not choose, the website asks the first time it happens."
+msgstr "Si no eliges, la web lo pregunta la primera vez que pase."
+
+#. module: almacenes_elite_connector
+msgid "Import Almacenes Elite invoices"
+msgstr "Importar las facturas de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Import Almacenes Elite invoices as vendor bills"
+msgstr "Importar las facturas de Almacenes Élite como facturas de proveedor"
+
+#. module: almacenes_elite_connector
+msgid "In stock"
+msgstr "En stock"
+
+#. module: almacenes_elite_connector
+msgid "Individual"
+msgstr "Particular"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "It had already been received: the existing order is kept (no duplicate)."
+msgstr "Ya se había recibido: se mantiene el pedido existente (sin duplicar)."
+
+#. module: almacenes_elite_connector
+msgid "Journal Entry"
+msgstr "Asiento contable"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Key saved: finish with «Connect and check»"
+msgstr "Clave guardada: termina con «Conectar y comprobar»"
+
+#. module: almacenes_elite_connector
+msgid "Last Updated by"
+msgstr "Última actualización por"
+
+#. module: almacenes_elite_connector
+msgid "Last Updated on"
+msgstr "Última actualización el"
+
+#. module: almacenes_elite_connector
+msgid "Last synchronisation"
+msgstr "Última sincronización"
+
+#. module: almacenes_elite_connector
+msgid "Last synchronisation error"
+msgstr "Último error de sincronización"
+
+#. module: almacenes_elite_connector
+msgid "Last update from Almacenes Elite"
+msgstr "Última actualización desde Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Last update:"
+msgstr "Última actualización:"
+
+#. module: almacenes_elite_connector
+msgid "Minimum order"
+msgstr "Pedido mínimo"
+
+#. module: almacenes_elite_connector
+msgid ""
+"New customer: one step, with your company data already filled in, and your prices apply at once.\n"
+"                                Already a customer: we recognise your tax ID and send an email to confirm it is you."
+msgstr ""
+"Cliente nuevo: un solo paso, con los datos de tu empresa ya rellenos, y tus precios se aplican al momento.\n"
+"                                Si ya eres cliente: te reconocemos por el NIF y te enviamos un correo para confirmar que eres tú."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "New delivery address added to your contacts: %s"
+msgstr "Nueva dirección de entrega añadida a tus contactos: %s"
+
+#. module: almacenes_elite_connector
+msgid "New delivery addresses from the website"
+msgstr "Direcciones de entrega nuevas de la web"
+
+#. module: almacenes_elite_connector
+msgid "New delivery addresses used on the website"
+msgstr "Direcciones de entrega nuevas usadas en la web"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "New prices on %s lines."
+msgstr "Precios nuevos en %s líneas."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/product.py
+msgid "No longer available at Almacenes Elite"
+msgstr "Ya no está disponible en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "No longer available: %s."
+msgstr "Ya no están disponibles: %s."
+
+#. module: almacenes_elite_connector
+msgid "No minimum"
+msgstr "Sin mínimo"
+
+#. module: almacenes_elite_connector
+msgid "No minimum order."
+msgstr "Sin pedido mínimo."
+
+#. module: almacenes_elite_connector
+msgid "No shipping costs from"
+msgstr "Sin portes desde"
+
+#. module: almacenes_elite_connector
+msgid "No shipping costs from (before VAT)"
+msgstr "Sin portes desde (sin IVA)"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "No shipping costs: this order reaches the %s minimum."
+msgstr "Sin portes: esta solicitud llega al mínimo de %s."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "No tracking number"
+msgstr "Sin número de seguimiento"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Not confirmed yet"
+msgstr "Aún sin confirmar"
+
+#. module: almacenes_elite_connector
+msgid "Not ordered yet"
+msgstr "Aún no pedido"
+
+#. module: almacenes_elite_connector
+msgid "Notes from Almacenes Elite"
+msgstr "Notas de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Number of employees"
+msgstr "Número de empleados"
+
+#. module: almacenes_elite_connector
+msgid ""
+"Odoo will exchange with Almacenes Elite only what is needed to buy from them: the orders placed on\n"
+"                            almaceneselite.com from this Odoo, their status, shipments and invoices, and the prices and stock of the\n"
+"                            products you buy from them. Nothing else is read or sent. You can disable it at any time."
+msgstr ""
+"Odoo solo intercambiará con Almacenes Élite lo necesario para comprarles: los pedidos hechos en almaceneselite.com desde este Odoo,\n"
+"                            su estado, los envíos y las facturas, y los precios y el stock de los productos que les compras. No se lee ni se envía nada más.\n"
+"                            Puedes desactivarlo cuando quieras."
+
+#. module: almacenes_elite_connector
+msgid "On order"
+msgstr "Sobre pedido"
+
+#. module: almacenes_elite_connector
+msgid "Only the products you buy are created in Odoo, never the whole catalog"
+msgstr "En Odoo solo se crean los productos que compras, nunca el catálogo entero"
+
+#. module: almacenes_elite_connector
+msgid "Open on almaceneselite.com"
+msgstr "Abierto en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Opened on almaceneselite.com with these products in the cart. When the order is placed there, this RFQ is confirmed here with the Almacenes Elite order number."
+msgstr "Abierta en almaceneselite.com con estos productos en la cesta. Cuando se haga allí el pedido, esta solicitud quedará confirmada aquí con el número de pedido de Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Order on almaceneselite.com"
+msgstr "Pedir en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+msgid "Ordered from Almacenes Elite"
+msgstr "Pedido a Almacenes Élite"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Ordered on almaceneselite.com: Almacenes Elite order %s."
+msgstr "Pedido hecho en almaceneselite.com: pedido %s de Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Orders"
+msgstr "Pedidos"
+
+#. module: almacenes_elite_connector
+msgid "Orders are placed on almaceneselite.com, already signed in, and come back here as purchase orders"
+msgstr "Los pedidos se hacen en almaceneselite.com, ya identificado, y vuelven aquí como pedidos de compra"
+
+#. module: almacenes_elite_connector
+msgid "Orders at Almacenes Elite"
+msgstr "Pedidos en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid ""
+"Orders to Almacenes Elite are placed on almaceneselite.com: press «Order on almaceneselite.com» and the website\n"
+"                        opens, already signed in, with these products in the cart. When you place the order there, this RFQ is confirmed\n"
+"                        here with the Almacenes Elite order number."
+msgstr "Los pedidos a Almacenes Élite se hacen en almaceneselite.com: pulsa «Pedir en almaceneselite.com» y se abre la web, ya identificado, con estos productos en la cesta. Cuando hagas allí el pedido, esta solicitud quedará confirmada aquí con el número de pedido de Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Out of stock"
+msgstr "Sin stock"
+
+#. module: almacenes_elite_connector
+msgid "Payment"
+msgstr "Pago"
+
+#. module: almacenes_elite_connector
+msgid "Payment at Almacenes Elite"
+msgstr "Pago en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Pending connection token"
+msgstr "Vale de conexión pendiente"
+
+#. module: almacenes_elite_connector
+msgid "Phone"
+msgstr "Teléfono"
+
+#. module: almacenes_elite_connector
+msgid "Place the order on almaceneselite.com and it comes back here confirmed. Closed the tab? It is confirmed by itself in a few minutes."
+msgstr "Haz el pedido en almaceneselite.com y volverá aquí confirmado. ¿Cerraste la pestaña? Se confirma solo en unos minutos."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Placed at Almacenes Elite: order %s."
+msgstr "Pedido en Almacenes Élite: %s."
+
+#. module: almacenes_elite_connector
+msgid "Post bills automatically when the totals match"
+msgstr "Publicar las facturas automáticamente si los totales coinciden"
+
+#. module: almacenes_elite_connector
+msgid "Post bills automatically when totals match"
+msgstr "Publicar las facturas automáticamente si los totales coinciden"
+
+#. module: almacenes_elite_connector
+msgid "Postcode"
+msgstr "Código postal"
+
+#. module: almacenes_elite_connector
+msgid "Prefer another payment method? Request it"
+msgstr "¿Prefieres otra forma de pago? Solicítala"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Preparing"
+msgstr "En preparación"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+#, python-format
+msgid "Press «Sí, conectar» in the email sent to %s. This Odoo connects by itself as soon as it is confirmed."
+msgstr "Pulsa «Sí, conectar» en el correo enviado a %s. Este Odoo se conecta solo en cuanto se confirme."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Prices and stock checked with Almacenes Elite."
+msgstr "Precios y stock comprobados con Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "Prices rounded to 2 decimals"
+msgstr "Precios redondeados a 2 decimales"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Prices updated with the current Almacenes Elite prices:"
+msgstr "Precios actualizados con los actuales de Almacenes Élite:"
+
+#. module: almacenes_elite_connector
+msgid "Product Variant"
+msgstr "Variante de producto"
+
+#. module: almacenes_elite_connector
+msgid "Products"
+msgstr "Productos"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Products without stock replaced by the alternative with stock:"
+msgstr "Productos sin stock cambiados por la alternativa con stock:"
+
+#. module: almacenes_elite_connector
+msgid "Province"
+msgstr "Provincia"
+
+#. module: almacenes_elite_connector
+msgid "Purchase Order"
+msgstr "Pedido de compra"
+
+#. module: almacenes_elite_connector
+msgid "Purchase order"
+msgstr "Pedido de compra"
+
+#. module: almacenes_elite_connector
+msgid "Rejected"
+msgstr "Rechazado"
+
+#. module: almacenes_elite_connector
+msgid "Remind me to order replenishment"
+msgstr "Avisarme para pedir la reposición"
+
+#. module: almacenes_elite_connector
+msgid "Remind me to order the replenishment"
+msgstr "Avisarme para pedir la reposición"
+
+#. module: almacenes_elite_connector
+msgid "Replenishment reminder sent"
+msgstr "Aviso de reposición enviado"
+
+#. module: almacenes_elite_connector
+msgid "Replenishment reminders for"
+msgstr "Avisos de reposición para"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Replenishment: order it on almaceneselite.com"
+msgstr "Reposición: pídela en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+msgid "Request another payment method"
+msgstr "Solicitar otra forma de pago"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py
+msgid "Request sent to Almacenes Elite"
+msgstr "Solicitud enviada a Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Requested on"
+msgstr "Solicitado el"
+
+#. module: almacenes_elite_connector
+msgid "Return or claim"
+msgstr "Devolver o reclamar"
+
+#. module: almacenes_elite_connector
+msgid "School"
+msgstr "Centro escolar"
+
+#. module: almacenes_elite_connector
+msgid "See the shop"
+msgstr "Ver la tienda"
+
+#. module: almacenes_elite_connector
+msgid "See the shop without signing up"
+msgstr "Ver la tienda sin darme de alta"
+
+#. module: almacenes_elite_connector
+msgid "Self-employed"
+msgstr "Autónomo"
+
+#. module: almacenes_elite_connector
+msgid "Set by Almacenes Elite for your account. With card or PayPal, each order is paid on almaceneselite.com and comes back to Odoo confirmed."
+msgstr "La fija Almacenes Élite para tu cuenta. Con tarjeta o PayPal, cada pedido se paga en almaceneselite.com y vuelve a Odoo confirmado."
+
+#. module: almacenes_elite_connector
+msgid "Shipments"
+msgstr "Envíos"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Shipped"
+msgstr "Enviado"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py
+msgid "Shipping costs (Almacenes Elite)"
+msgstr "Portes (Almacenes Élite)"
+
+#. module: almacenes_elite_connector
+msgid "Shipping costs at Almacenes Elite"
+msgstr "Portes en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Shipping costs below the minimum"
+msgstr "Portes por debajo del mínimo"
+
+#. module: almacenes_elite_connector
+msgid "Shipping costs product"
+msgstr "Producto para portes"
+
+#. module: almacenes_elite_connector
+msgid "Shipping costs rule"
+msgstr "Regla de portes"
+
+#. module: almacenes_elite_connector
+msgid "Shop on almaceneselite.com"
+msgstr "Comprar en almaceneselite.com"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Status"
+msgstr "Estado"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Still to be delivered: %s"
+msgstr "Pendiente de entregar: %s"
+
+#. module: almacenes_elite_connector
+msgid "Stock at Almacenes Elite"
+msgstr "Stock en Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Street"
+msgstr "Calle"
+
+#. module: almacenes_elite_connector
+msgid "Supplier Pricelist"
+msgstr "Lista de precios del proveedor"
+
+#. module: almacenes_elite_connector
+msgid "Tax ID"
+msgstr "NIF"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+msgid "The Almacenes Elite connection is disabled. Enable it in Purchase › Configuration › Settings."
+msgstr "La conexión con Almacenes Élite está desactivada. Actívala en Compra › Configuración › Ajustes."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "The connection was not confirmed"
+msgstr "La conexión no se ha confirmado"
+
+#. module: almacenes_elite_connector
+msgid "The key will be removed from this Odoo. Continue?"
+msgstr "La clave se borrará de este Odoo. ¿Continuar?"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "There are no alternatives to use: check prices and stock again."
+msgstr "No hay alternativas que usar: vuelve a comprobar precios y stock."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "There is nothing to order: add products to the RFQ first."
+msgstr "No hay nada que pedir: añade productos a la solicitud primero."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid ""
+"These products have no Almacenes Elite code. Buy them once on almaceneselite.com (Purchase › Almacenes Elite › Shop on almaceneselite.com) or set their vendor product code:\n"
+"%s"
+msgstr ""
+"Estos productos no tienen código de Almacenes Élite. Cómpralos una vez en almaceneselite.com (Compra › Almacenes Élite › Comprar en almaceneselite.com) o pon su código de proveedor:\n"
+"%s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_company.py
+msgid "They will study it and contact you."
+msgstr "Lo estudiarán y se pondrán en contacto contigo."
+
+#. module: almacenes_elite_connector
+msgid "This Odoo connects to your account by itself as soon as it is confirmed (requested on"
+msgstr "Este Odoo se conecta solo a tu cuenta en cuanto se confirme (pedido el"
+
+#. module: almacenes_elite_connector
+msgid "This Odoo rounds unit prices to 2 decimals and Almacenes Elite prices have 4, so orders and bills can differ by a few cents."
+msgstr "Este Odoo redondea los precios unitarios a 2 decimales y los de Almacenes Élite tienen 4: los pedidos y las facturas pueden diferir en unos céntimos."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "This RFQ is not addressed to Almacenes Elite."
+msgstr "Esta solicitud no es para Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "This order goes to an address that is not in your contacts:"
+msgstr "Este pedido va a una dirección que no está en tus contactos:"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "This order was already placed at Almacenes Elite (%s)."
+msgstr "Este pedido ya está hecho en Almacenes Élite (%s)."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "This purchase order has no Almacenes Elite order yet."
+msgstr "Este pedido de compra aún no tiene pedido en Almacenes Élite."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/res_config_settings.py
+msgid "Tick «Enable the connection» first: no data is exchanged with Almacenes Elite until you do."
+msgstr "Marca antes «Activar la conexión»: hasta entonces no se intercambia ningún dato con Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid "To-do for"
+msgstr "Tarea para"
+
+#. module: almacenes_elite_connector
+msgid "Track inventory of new products"
+msgstr "Controlar el inventario de los productos nuevos"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Tracking"
+msgstr "Seguimiento"
+
+#. module: almacenes_elite_connector
+msgid "Type of customer"
+msgstr "Tipo de cliente"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+#, python-format
+msgid "Unexpected answer from Almacenes Elite (HTTP %s)."
+msgstr "Respuesta inesperada de Almacenes Élite (HTTP %s)."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/elite_api.py
+msgid "Unknown error"
+msgstr "Error desconocido"
+
+#. module: almacenes_elite_connector
+msgid "Update from Almacenes Elite"
+msgstr "Actualizar desde Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Update now"
+msgstr "Actualizar ahora"
+
+#. module: almacenes_elite_connector
+msgid "Update prices and stock"
+msgstr "Actualizar precios y stock"
+
+#. module: almacenes_elite_connector
+msgid "Update prices and stock every night"
+msgstr "Actualizar precios y stock cada noche"
+
+#. module: almacenes_elite_connector
+msgid "Use 4 decimals for prices"
+msgstr "Usar 4 decimales en los precios"
+
+#. module: almacenes_elite_connector
+msgid "Use the alternatives with stock"
+msgstr "Usar las alternativas con stock"
+
+#. module: almacenes_elite_connector
+msgid "Vendor bill"
+msgstr "Factura de proveedor"
+
+#. module: almacenes_elite_connector
+msgid "Vendor bills"
+msgstr "Facturas de proveedor"
+
+#. module: almacenes_elite_connector
+msgid "Waiting for approval in your company"
+msgstr "Pendiente de aprobación en tu empresa"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "Waiting for approval in your company: %s"
+msgstr "Pendiente de aprobación en tu empresa: %s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "Welcome to Almacenes Elite"
+msgstr "Bienvenido a Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "When an order bought on almaceneselite.com goes to an address that is not in this Odoo: add it to your contacts automatically, or leave a button on the purchase order to add it yourself. Empty: the website asks once."
+msgstr "Cuando un pedido comprado en almaceneselite.com va a una dirección que no está en este Odoo: añadirla a tus contactos automáticamente, o dejar en el pedido de compra un botón para añadirla tú. Vacío: la web lo pregunta una vez."
+
+#. module: almacenes_elite_connector
+msgid "When enabled, Odoo exchanges with Almacenes Elite the data needed to buy from them: the orders placed on almaceneselite.com from this Odoo, their status, shipments and invoices, and the prices and stock of the products you buy from them."
+msgstr "Con la conexión activada, Odoo intercambia con Almacenes Élite lo necesario para comprarles: los pedidos hechos en almaceneselite.com desde este Odoo, su estado, los envíos y las facturas, y los precios y el stock de los productos que les compras."
+
+#. module: almacenes_elite_connector
+msgid ""
+"When your replenishment rules prepare an RFQ for Almacenes Elite, a to-do reminds you to order it on\n"
+"                                almaceneselite.com (nothing is ordered by itself)."
+msgstr "Cuando tus reglas de reabastecimiento preparan una solicitud para Almacenes Élite, una tarea te recuerda pedirla en almaceneselite.com (no se pide nada solo)."
+
+#. module: almacenes_elite_connector
+msgid "When your replenishment rules prepare an RFQ for Almacenes Elite, a to-do reminds you to order it on almaceneselite.com (nothing is ordered by itself)."
+msgstr "Cuando tus reglas de reabastecimiento preparan una solicitud para Almacenes Élite, una tarea te recuerda pedirla en almaceneselite.com (no se pide nada solo)."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "You are already a customer: Almacenes Elite is checking it"
+msgstr "Ya eres cliente: Almacenes Élite lo está revisando"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "You are already a customer: confirm it is you"
+msgstr "Ya eres cliente: confirma que eres tú"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "You are already an Almacenes Elite customer"
+msgstr "Ya eres cliente de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Your Almacenes Elite account"
+msgstr "Tu cuenta de Almacenes Élite"
+
+#. module: almacenes_elite_connector
+msgid "Your RFQs show what is out of stock at Almacenes Elite, when it is expected and an alternative with stock."
+msgstr "Tus solicitudes dicen qué no tiene stock en Almacenes Élite, cuándo se espera y una alternativa con stock."
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/wizards/signup_wizard.py
+msgid "Your account is ready: you can buy from Purchase › Almacenes Elite."
+msgstr "Tu cuenta está lista: ya puedes comprar desde Compra › Almacenes Élite."
+
+#. module: almacenes_elite_connector
+msgid ""
+"Your company data is already filled in from this Odoo: check it, tell us what type of customer you are and accept the\n"
+"                    conditions. New customers: your prices apply from the first moment and you pay by card or PayPal.\n"
+"                    Already a customer? We recognise your tax ID and connect this Odoo to your account, with the same prices and payment\n"
+"                    terms, once you confirm it by email."
+msgstr ""
+"Los datos de tu empresa ya vienen de este Odoo: revísalos, dinos qué tipo de cliente eres y acepta las\n"
+"                    condiciones. Cliente nuevo: tus precios se aplican desde el primer momento y pagas con tarjeta o PayPal.\n"
+"                    ¿Ya eres cliente? Te reconocemos por el NIF y conectamos este Odoo con tu cuenta, con tus precios y tu forma\n"
+"                    de pago de siempre, en cuanto lo confirmes por correo."
+
+#. module: almacenes_elite_connector
+msgid "Your name"
+msgstr "Tu nombre"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "Your replenishment rules have prepared this RFQ for Almacenes Elite. Press «Order on almaceneselite.com»: the website opens with these products in the cart and the order is placed there."
+msgstr "Tus reglas de reabastecimiento han preparado esta solicitud para Almacenes Élite. Pulsa «Pedir en almaceneselite.com»: se abre la web con estos productos en la cesta y el pedido se hace allí."
+
+#. module: almacenes_elite_connector
+msgid "Your usual payment terms"
+msgstr "Tu forma de pago habitual"
+
+#. module: almacenes_elite_connector
+msgid "almaceneselite.com from Odoo"
+msgstr "almaceneselite.com desde Odoo"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "alternative with stock: [%(ref)s] %(name)s (%(price)s)"
+msgstr "alternativa con stock: [%(ref)s] %(name)s (%(price)s)"
+
+#. module: almacenes_elite_connector
+msgid "ea_…"
+msgstr "ea_…"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+#, python-format
+msgid "expected %s"
+msgstr "prevista el %s"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "no stock right now"
+msgstr "sin stock ahora mismo"
+
+#. module: almacenes_elite_connector
+#. odoo-python
+#: code:addons/almacenes_elite_connector/models/purchase_order.py
+msgid "on order"
+msgstr "sobre pedido"
+
+#. module: almacenes_elite_connector
+msgid "€ (before VAT); below that,"
+msgstr "€ (sin IVA); por debajo,"
+
+#. module: almacenes_elite_connector
+msgid "€. Your RFQs show how much is missing."
+msgstr "€. Tus solicitudes dicen cuánto falta."
+

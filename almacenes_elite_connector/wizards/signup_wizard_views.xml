@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo>
+    <record id="almacenes_elite_signup_view_form" model="ir.ui.view">
+        <field name="name">almacenes.elite.signup.form</field>
+        <field name="model">almacenes.elite.signup</field>
+        <field name="arch" type="xml">
+            <form string="Your Almacenes Elite account">
+                <div class="text-muted mb-3">
+                    Your company data is already filled in from this Odoo: check it, tell us what type of customer you are and accept the
+                    conditions. New customers: your prices apply from the first moment and you pay by card or PayPal.
+                    Already a customer? We recognise your tax ID and connect this Odoo to your account, with the same prices and payment
+                    terms, once you confirm it by email.
+                </div>
+                <group>
+                    <field name="customer_type" widget="radio" options="{'horizontal': true}"/>
+                    <field name="employees" invisible="customer_type != 'empresa'" required="customer_type == 'empresa'"/>
+                </group>
+                <group>
+                    <group string="Customer">
+                        <field name="company_name" invisible="customer_type == 'particular'" required="customer_type in ('empresa', 'autonomo', 'colegio')"/>
+                        <field name="vat" required="customer_type in ('empresa', 'autonomo', 'colegio')"/>
+                        <field name="contact_name"/>
+                        <field name="email" widget="email"/>
+                        <field name="phone" widget="phone"/>
+                    </group>
+                    <group string="Address">
+                        <field name="street"/>
+                        <field name="zip"/>
+                        <field name="city"/>
+                        <field name="state_id" domain="[('country_id', '=', country_id)]" options="{'no_create': True}"/>
+                        <field name="country_id" options="{'no_create': True}"/>
+                    </group>
+                </group>
+                <div class="d-flex gap-2 align-items-start">
+                    <field name="accept" nolabel="1"/>
+                    <label for="accept" class="o_light_label" string="I have read and accept the conditions of service of Almacenes Elite (almaceneselite.com/condiciones-de-servicio)"/>
+                </div>
+                <footer>
+                    <button name="action_signup" type="object" string="Continue" class="btn-primary" icon="fa-check"/>
+                    <button special="cancel" string="Cancel" class="btn-secondary"/>
+                </footer>
+            </form>
+        </field>
+    </record>
+
+    <record id="action_almacenes_elite_signup" model="ir.actions.act_window">
+        <field name="name">Your Almacenes Elite account</field>
+        <field name="res_model">almacenes.elite.signup</field>
+        <field name="view_mode">form</field>
+        <field name="target">new</field>
+    </record>
+</odoo>

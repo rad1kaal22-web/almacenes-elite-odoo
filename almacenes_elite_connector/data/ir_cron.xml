@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<odoo noupdate="1">
+    <record id="ir_cron_almacenes_elite_sync" model="ir.cron">
+        <field name="name">Almacenes Elite: order status, shipments and invoices</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_ea_sync()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">hours</field>
+        <field name="active" eval="True"/>
+    </record>
+    <record id="ir_cron_almacenes_elite_signup" model="ir.cron">
+        <field name="name">Almacenes Elite: pending connections and orders just placed on the website</field>
+        <field name="model_id" ref="base.model_res_company"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_ea_signup_check()</field>
+        <field name="interval_number">10</field>
+        <field name="interval_type">minutes</field>
+        <field name="active" eval="True"/>
+    </record>
+    <record id="ir_cron_almacenes_elite_nightly" model="ir.cron">
+        <field name="name">Almacenes Elite: prices, stock and replenishment reminders</field>
+        <field name="model_id" ref="purchase.model_purchase_order"/>
+        <field name="state">code</field>
+        <field name="code">model._cron_ea_nightly()</field>
+        <field name="interval_number">1</field>
+        <field name="interval_type">days</field>
+        <field name="nextcall" eval="(DateTime.now() + timedelta(days=1)).strftime('%Y-%m-%d 02:40:00')"/>
+        <field name="active" eval="True"/>
+    </record>
+</odoo>
