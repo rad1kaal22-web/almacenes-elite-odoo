@@ -25,11 +25,11 @@
     <menuitem id="menu_almacenes_elite_punchout" name="Shop on almaceneselite.com" parent="menu_almacenes_elite_root"
               action="action_almacenes_elite_punchout" sequence="5"/>
     <menuitem id="menu_almacenes_elite_portal" name="B2B portal (approvals, cost centers, reports)" parent="menu_almacenes_elite_root"
-              action="action_almacenes_elite_portal" sequence="7"/>
+              action="action_almacenes_elite_portal" sequence="40" groups="purchase.group_purchase_manager"/>
     <menuitem id="menu_almacenes_elite_orders" name="Orders at Almacenes Elite" parent="menu_almacenes_elite_root"
-              action="action_almacenes_elite_orders" sequence="20"/>
+              action="action_almacenes_elite_orders" sequence="10"/>
     <menuitem id="menu_almacenes_elite_howto" name="How it works" parent="menu_almacenes_elite_root"
-              action="action_almacenes_elite_howto" sequence="25"/>
+              action="action_almacenes_elite_howto" sequence="20"/>
     <menuitem id="menu_almacenes_elite_sync" name="Update now" parent="menu_almacenes_elite_root"
               action="action_almacenes_elite_sync" sequence="30" groups="purchase.group_purchase_manager"/>
 </odoo>

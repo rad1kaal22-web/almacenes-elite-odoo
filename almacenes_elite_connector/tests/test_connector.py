@@ -408,6 +408,32 @@ class TestAlmacenesEliteConnector(TransactionCase):
         self.assertIn('080142', order.ea_tracking)
         self.assertIn('2026', order.ea_tracking)
 
+    def test_expected_date_lands_on_the_order_and_the_receipt(self):
+        """What Almacenes Elite says it will deliver is written on the purchase order (and on the receipt), so their warehouse plans with it."""
+        self.api.web_order('S90097', {'080142': 24}, pendiente=[{'ref': '080142', 'cantidad': 12, 'prevista': '2026-11-03'}])
+        order = self.env['purchase.order']._ea_import_web_order('S90097')
+        order._ea_register_dates(order.ea_shipments.get('entregas'), order.ea_shipments.get('pendiente'))
+        line = order.order_line.filtered(lambda l: not l.display_type)[:1]
+        self.assertEqual(fields.Date.to_date(line.date_planned), fields.Date.to_date('2026-11-03'))
+        if 'picking_ids' in order._fields:
+            for picking in order.picking_ids.filtered(lambda p: p.state not in ('done', 'cancel')):
+                self.assertEqual(fields.Date.to_date(picking.scheduled_date), fields.Date.to_date('2026-11-03'))
+
+    def test_order_status_follows_the_carrier_until_delivery(self):
+        """The purchase order shows the carrier status: shipped with its tracking number, then delivered with the date."""
+        api_order = self.api.web_order('S90098', {'080142': 24})
+        order = self.env['purchase.order']._ea_import_web_order('S90098')
+        api_order['entregas'] = [{'albaran': 'WH/OUT/1', 'estado': 'enviado', 'fecha_envio': '2026-11-02', 'transportista': 'DHL',
+                                  'seguimiento': '1234567890', 'url_seguimiento': 'https://dhl.test/1234567890',
+                                  'estado_agencia': 'En reparto', 'fecha_entrega': ''}]
+        self.env['purchase.order']._ea_update_from_api(api_order, self.company)
+        self.assertEqual(order.ea_state, 'shipped')
+        self.assertIn('En reparto', order.ea_tracking)
+        api_order['entregas'][0].update({'estado': 'entregado', 'estado_agencia': 'Entregado', 'fecha_entrega': '2026-11-04'})
+        self.env['purchase.order']._ea_update_from_api(api_order, self.company)
+        self.assertEqual(order.ea_state, 'delivered')
+        self.assertIn('2026', order.ea_tracking)
+
     def test_return_or_claim_opens_my_returns(self):
         self.api.web_order('S90091', {'630012': 1})
         order = self.env['purchase.order']._ea_import_web_order('S90091')

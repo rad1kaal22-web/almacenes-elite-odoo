@@ -26,6 +26,7 @@ EA_STATES = [
     ('confirmed', 'Confirmed'),
     ('approval', 'Waiting for approval in your company'),
     ('shipped', 'Shipped'),
+    ('delivered', 'Delivered'),
     ('rejected', 'Rejected'),
     ('cancelled', 'Cancelled'),
 ]
@@ -65,20 +66,24 @@ class PurchaseOrder(models.Model):
 
     @api.depends('ea_shipments')
     def _compute_ea_tracking(self):
-        labels = {'preparando': _("Preparing"), 'enviado': _("Shipped"), 'anulado': _("Cancelled")}
+        labels = {'preparando': _("Preparing"), 'enviado': _("Shipped"), 'entregado': _("Delivered"), 'anulado': _("Cancelled")}
         for order in self:
             data = order.ea_shipments or {}
             rows = []
             for ship in data.get('entregas') or []:
                 link, number = ship.get('url_seguimiento'), ship.get('seguimiento') or ''
                 tracking = Markup('<a href="%s" target="_blank" rel="noopener">%s</a>') % (link, number) if link and number else escape(number)
-                rows.append(Markup('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>') % (
+                carrier_state = ship.get('estado_agencia') or ''
+                if ship.get('fecha_entrega'):
+                    carrier_state = _("Delivered %s", order._ea_date(ship['fecha_entrega'])) if not carrier_state else \
+                        '%s · %s' % (carrier_state, order._ea_date(ship['fecha_entrega']))
+                rows.append(Markup('<tr><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td><td>%s</td></tr>') % (
                     ship.get('albaran') or '', labels.get(ship.get('estado'), ship.get('estado') or ''),
-                    (ship.get('fecha_envio') or ship.get('fecha_prevista') or '')[:10], ship.get('transportista') or '', tracking))
+                    (ship.get('fecha_envio') or ship.get('fecha_prevista') or '')[:10], ship.get('transportista') or '', tracking, carrier_state))
             html = Markup('')
             if rows:
-                html = Markup('<table class="table table-sm o_ea_shipments"><thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>%s</tbody></table>') % (
-                    _("Delivery"), _("Status"), _("Date"), _("Carrier"), _("Tracking"), Markup('').join(rows))
+                html = Markup('<table class="table table-sm o_ea_shipments"><thead><tr><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>%s</th><th>%s</th></tr></thead><tbody>%s</tbody></table>') % (
+                    _("Delivery"), _("Status"), _("Date"), _("Carrier"), _("Tracking"), _("Carrier status"), Markup('').join(rows))
             pending = data.get('pendiente') or []
             if pending:
                 items = []
@@ -616,7 +621,7 @@ class PurchaseOrder(models.Model):
             'partner_id': company.ea_partner_id.id, 'company_id': company.id, 'partner_ref': number, 'origin': 'almaceneselite.com',
             'ea_order_numbers': number, 'ea_state': state, 'ea_from_web': True, 'ea_last_sync': fields.Datetime.now(),
             'order_line': self._ea_web_lines(api_order.get('lineas'), company)})
-        if state in ('confirmed', 'shipped'):
+        if state in ('confirmed', 'shipped', 'delivered'):
             order._ea_confirm_decided()
         ea_note(order, _("Bought on almaceneselite.com: Almacenes Elite order %s.", number))
         order._ea_web_delivery(api_order, permission=permission)
@@ -679,7 +684,7 @@ class PurchaseOrder(models.Model):
         Elite, then confirmed (or left waiting if their company still has to approve it on the website)."""
         self.ensure_one()
         states = [API_STATE.get(o.get('estado'), 'confirmed') for o in api_orders]
-        confirmed = all(s in ('confirmed', 'shipped') for s in states)
+        confirmed = all(s in ('confirmed', 'shipped', 'delivered') for s in states)
         self._ea_apply_order_result({'pedidos': api_orders, 'estado': 'confirmado' if confirmed else 'pendiente_aprobacion'}, paid_on_web=True)
         self._ea_web_delivery(api_orders[0], permission=permission or {'si': 'add', 'no': 'manual'}.get(api_orders[0].get('direccion_a_odoo') or ''))
         if confirmed and self.state in ('draft', 'sent', 'to approve'):
@@ -800,7 +805,7 @@ class PurchaseOrder(models.Model):
         self._ea_apply_order_result({'pedidos': [api_order], 'estado': api_order.get('estado')})
         ea_note(self, _("Almacenes Elite received this RFQ by email and placed it as order %s: this is the same purchase order (no duplicate).",
                         api_order.get('numero')))
-        if API_STATE.get(api_order.get('estado'), 'confirmed') in ('confirmed', 'shipped'):
+        if API_STATE.get(api_order.get('estado'), 'confirmed') in ('confirmed', 'shipped', 'delivered'):
             self._ea_confirm_decided()
 
     @api.model
@@ -821,8 +826,11 @@ class PurchaseOrder(models.Model):
             state = API_STATE.get(api_order.get('estado'), order.ea_state)
             shipments = api_order.get('entregas') or []
             pending = api_order.get('pendiente') or []
-            if state == 'confirmed' and shipments and not pending and all(s.get('estado') == 'enviado' for s in shipments):
+            activas = [s for s in shipments if s.get('estado') != 'anulado']
+            if state == 'confirmed' and activas and not pending and all(s.get('estado') in ('enviado', 'entregado') for s in activas):
                 state = 'shipped'
+            if state in ('confirmed', 'shipped') and activas and not pending and all(s.get('estado') == 'entregado' for s in activas):
+                state = 'delivered'
             seen = set((order.ea_shipments_seen or '').split(',')) - {''}
             for ship in shipments:
                 if ship.get('estado') == 'enviado' and ship.get('albaran') not in seen:
@@ -832,13 +840,51 @@ class PurchaseOrder(models.Model):
                     ea_note(order, Markup('%s<br/>%s') % (
                         _("Almacenes Elite shipped %(doc)s with %(carrier)s.", doc=ship.get('albaran'), carrier=ship.get('transportista') or '-'), tracking))
                     order._ea_set_picking_tracking(ship)
+            for ship in shipments:
+                if ship.get('estado') == 'entregado' and ('ENTREGADO:' + (ship.get('albaran') or '')) not in seen:
+                    seen.add('ENTREGADO:' + (ship.get('albaran') or ''))
+                    ea_note(order, _("%(carrier)s delivered %(doc)s on %(date)s.", carrier=ship.get('transportista') or _("The carrier"),
+                                     doc=ship.get('albaran') or '', date=order._ea_date(ship.get('fecha_entrega') or '')))
             if order.ea_from_web and order.state in ('draft', 'sent', 'to approve'):
-                if state in ('confirmed', 'shipped'):
+                if state in ('confirmed', 'shipped', 'delivered'):
                     order._ea_confirm_decided()
                 elif state in ('rejected', 'cancelled'):
                     order.button_cancel()
             order.write({'ea_state': state, 'ea_shipments': {'entregas': shipments, 'pendiente': pending},
                          'ea_shipments_seen': ','.join(sorted(seen)), 'ea_last_sync': fields.Datetime.now()})
+            order._ea_register_dates(shipments, pending)
+
+    def _ea_expected_date(self, shipments, pending):
+        """The date Almacenes Elite expects to deliver: the earliest date they gave us, so the client's Odoo plans with it."""
+        dates = []
+        for ship in shipments or []:
+            for key in ('fecha_prevista', 'fecha_envio'):
+                if ship.get(key):
+                    dates.append(str(ship[key])[:10])
+                    break
+        for item in pending or []:
+            if item.get('prevista'):
+                dates.append(str(item['prevista'])[:10])
+        dates = [d for d in dates if len(d) == 10]
+        if not dates:
+            return False
+        try:
+            return fields.Datetime.to_datetime(min(dates) + ' 08:00:00')
+        except (TypeError, ValueError):
+            return False
+
+    def _ea_register_dates(self, shipments, pending):
+        """Writes that date on the order lines and on the receipt, so the warehouse sees when it arrives."""
+        self.ensure_one()
+        when = self._ea_expected_date(shipments, pending)
+        if not when:
+            return
+        lines = self.order_line.filtered(lambda l: not l.display_type and l.date_planned != when)
+        if lines:
+            lines.write({'date_planned': when})
+        if 'picking_ids' in self._fields:
+            for picking in self.picking_ids.filtered(lambda p: p.state not in ('done', 'cancel') and p.scheduled_date != when):
+                picking.write({'scheduled_date': when})
 
     def _ea_set_picking_tracking(self, ship):
         """With the Inventory/Delivery apps installed, the tracking number also goes to the receipt."""
@@ -848,3 +894,5 @@ class PurchaseOrder(models.Model):
         for picking in self.picking_ids.filtered(lambda p: p.state not in ('done', 'cancel')):
             if 'carrier_tracking_ref' in picking._fields and not picking.carrier_tracking_ref:
                 picking.carrier_tracking_ref = ship['seguimiento']
+            if ship.get('albaran') and 'origin' in picking._fields and ship['albaran'] not in (picking.origin or ''):
+                picking.origin = ((picking.origin or '') + ' · ' + ship['albaran']).strip(' ·')
