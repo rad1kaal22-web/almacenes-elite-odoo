@@ -8,7 +8,14 @@
             almaceneselite.com, with your prices, approvals and payment method, and it comes back to Odoo as a confirmed purchase
             order. Shipments, tracking numbers and invoices follow by themselves.
         </p>
-        <img src="main_screenshot.png" class="img img-fluid img-responsive" alt="An RFQ ready to order on almaceneselite.com"/>
+        <ul style="font-size:16px; text-align:left; max-width:760px; margin:0 auto 24px;">
+            <li>Shop signed in, with your prices, your approvals and your payment method.</li>
+            <li>The order comes back as a confirmed purchase order, with the same total.</li>
+            <li>Delivery date, carrier status and tracking number on the order, until it is delivered.</li>
+            <li>Invoices and credit notes as draft vendor bills, with the original PDF.</li>
+            <li>Free, open source (LGPL-3), for Odoo 17, 18 and 19.</li>
+        </ul>
+        <img src="cover.gif" class="img img-fluid img-responsive" style="border-radius:10px;" alt="Buy on almaceneselite.com and everything lands in your Odoo"/>
     </div>
 </section>
 
@@ -44,10 +51,12 @@
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
-        <h3 class="oe_slogan">4. Status, shipments, tracking numbers and returns</h3>
+        <h3 class="oe_slogan">4. Status, shipments and delivery by the carrier</h3>
         <p style="font-size:15px;">Every hour (or with "Update now") the order status, deliveries, carrier and tracking links come back to the
-            purchase order. With Inventory installed, the tracking number is also written on the receipt. "Return or claim" opens the returns
-            page of almaceneselite.com with that order already chosen.</p>
+            purchase order, and the status follows the parcel: shipped with its tracking number, out for delivery and delivered with the date.
+            The delivery date Almacenes Elite expects is written on the order lines and on the receipt, so your warehouse plans with it, and with
+            Inventory installed the tracking number and our delivery note go to the receipt too. "Return or claim" opens the returns page of
+            almaceneselite.com with that order already chosen.</p>
         <img src="screenshot_tracking.png" class="img img-fluid img-responsive" alt="Shipments and tracking"/>
     </div>
 </section>
@@ -64,6 +73,23 @@
 
 <section class="oe_container">
     <div class="oe_row oe_spaced">
+        <h3 class="oe_slogan">How to install it</h3>
+        <ul style="font-size:15px; text-align:left; max-width:820px; margin:0 auto 10px;">
+            <li><b>Odoo.sh</b>: press "Deploy on Odoo.sh" on this page. It is added to your branch and deployed.</li>
+            <li><b>Odoo on your own server</b>: press "Download for version 18.0", unzip it and put the
+                <i>almacenes_elite_connector</i> folder in your add-ons directory. Restart Odoo, then Apps › Update Apps List,
+                search "Almacenes Elite" and install it.</li>
+            <li><b>Odoo Online (odoo.com)</b>: Odoo does not allow third-party apps there. You still buy from your Odoo another way:
+                we send you your products to import and you order by email from your own RFQ. See
+                <a href="https://almaceneselite.com/conecta-tu-odoo">almaceneselite.com/conecta-tu-odoo</a>.</li>
+        </ul>
+        <p style="font-size:15px;"><b>Rather not do it yourself?</b> We install it with you in a ten-minute call:
+            <a href="mailto:pedidos@almaceneselite.com">pedidos@almaceneselite.com</a> · +34 963 79 45 50</p>
+    </div>
+</section>
+
+<section class="oe_container oe_dark">
+    <div class="oe_row oe_spaced">
         <h3 class="oe_slogan">Start in two minutes</h3>
         <ol style="font-size:15px;">
             <li>In Purchase › Configuration › Settings, enable the Almacenes Elite connection.</li>
@@ -76,7 +102,7 @@
     </div>
 </section>
 
-<section class="oe_container oe_dark">
+<section class="oe_container">
     <div class="oe_row oe_spaced">
         <h3 class="oe_slogan">Your data</h3>
         <p style="font-size:15px;">This module uses an external service: Almacenes Elite. Nothing is sent until you enable the connection in the

@@ -35,7 +35,7 @@ terms, after you confirm it by email. Data is only sent after you enable the con
         'views/purchase_order_views.xml',
         'views/menus.xml',
     ],
-    'images': ['static/description/banner.png', 'static/description/main_screenshot.png'],
+    'images': ['static/description/cover.png', 'static/description/banner.png', 'static/description/main_screenshot.png'],
     'installable': True,
     'application': True,
 }
